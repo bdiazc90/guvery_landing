@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Guvery</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container-md fixed-top px-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white p-md-3 shadow border rounded-4 my-md-2">
+            <div class="container-sm">
+                <a href="#" class="navbar-brand">
+                    <img src="./images/logotipo_guvery_sm.png" alt="Logo de Guvery" width="130">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav mb-sm-4 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Cómo funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Precio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Cupones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 btn btn-outline-secondary" href="#">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Title, subtitle -->
+    <div class="container-fluid">
+        <div class="w-100 vh-100 d-flex flex-column-reverse flex-lg-row justify-content-end justify-content-lg-between align-items-center">
+            <!-- left, bottom -->
+            <div class="content ms-2 ms-sm-5 ms-xl-6 text-start" style="width: 100%;">
+                <h1 class="display-2 text-guvery text-start fw-bold">Haz tus compras con viajeros</h1>
+                <h2 class="h5">Guvery asegura tu dinero hasta que las recibas</h2>
+                <div class="my-4 my-xl-5">
+                    <input type="text" class="form-control border-5 shadow-sm mx-lg-0" placeholder="Pega el link del producto" style="max-width: 520px; max-height: 56px; padding: 21px; border-width: 2px;">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <button type="button" class="btn btn-lg btn-primary shadow-bd my-4 rounded-3 fw-bolder py-2 px-4 fs-6" style="min-height: 56px; min-width: 130px;">Iniciar Pedido</button>
+                        <p class="text-start text-black text-opacity-25 text-uppercase fw-bold fs-6 my-4 ps-2 ps-sm-4 pt-1 overflow-auto" style="max-width: 300px;">
+                            Pagas cuando aceptas la oferta de un viajero
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4" style="max-width: 378px;">
+                    <div class="text-start h6 text-warning mb-0">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="h6 text-muted fw-normal"> Basado en 265+ reseñas</span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center mt-1">
+                        <div>
+                            <img src="./images/logo_google_640.png" alt="Logo de Google" width="86" class="img-responsive mt-1 ms-1 opacity-50" style="filter: contrast(0) grayscale(100%); -webkit-filter: contrast(0) grayscale(100%);">
+                        </div>
+                        <div>
+                            <img src="./images/logo_facebook_xl.png" alt="Logo de Google" width="100" class="img-responsive ms-4 opacity-50" style="filter: contrast(0) grayscale(100%); -webkit-filter: contrast(0) grayscale(100%);">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- rigth, top  -->
+            <div class="text-center mt-6 mt-sm-8 mb-4 me-lg-4 me-xl-5 align-self-md-start" style="width: 70%;">
+                <!-- <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-4" alt="Foto" style="max-width: 100%; height: auto;"> -->
+                <!-- entregas -->
+                <div id="carouselExampleIndicators" class="carousel carousel-light slide mt-3" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-4 d-block w-100" alt="Foto" style="max-width: 100%; height: auto; filter: brightness(0.6) contrast(1);">
+                        
+                        <p class="carousel-caption d-block h4">📦 18,000+ entregas</p>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-4 d-block w-100" alt="Foto" style="max-width: 100%; height: auto; filter: brightness(0.6) contrast(1);">
+                        <p class="carousel-caption d-block h4">🇵🇪 6+ años operando</p>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-4 d-block w-100" alt="Foto" style="max-width: 100%; height: auto; filter: brightness(0.6) contrast(1);">
+                        <p class="carousel-caption d-block h4">🙋‍♂️ 5,000+ clientes</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+            <p>
+                <a href="" class="btn btn-primary">Hola</a>
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
+                natus iusto fugit id saepe neque rerum magni laudantium accusantium
+                dolorem numquam quasi.
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
+                natus iusto fugit id saepe neque rerum magni laudantium accusantium
+                dolorem numquam quasi.
+            </p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    const nav = document.querySelector('nav');
+    const logo = nav.querySelector('img');
+    window.onload = navBarEffect();
+    window.addEventListener('scroll', navBarEffect);
+    window.addEventListener('resize', navBarEffect);
+    
+    function navBarEffect() {
+        if (window.pageYOffset > 100) {
+            // bajas
+            nav.classList.add('bg-guvery', 'shadow-lg');
+            nav.classList.remove('bg-white');
+            nav.querySelectorAll('li > a').forEach((link) => link.classList.add('text-white'));
+            nav.querySelectorAll('li > a.btn-outline-secondary').forEach((button) => button.classList.replace('btn-outline-secondary', 'btn-outline-primary'));
+            logo.style.filter = "brightness(0) invert(1)";
+            navBarScreenSize();
+        } else {
+            // top
+            nav.classList.add('bg-white');
+            nav.classList.remove('bg-guvery', 'shadow-lg');
+            nav.querySelectorAll('li > a').forEach((link) => link.classList.remove('text-white'));
+            nav.querySelectorAll('li > a.btn-outline-primary').forEach((button) => button.classList.replace('btn-outline-primary', 'btn-outline-secondary'));
+            logo.style.filter = "";
+            navBarScreenSize();
+        }
+        function navBarScreenSize() {
+            if (window.innerWidth < 768) {
+                // sm
+                nav.classList.remove('border', 'rounded-4');
+            } else {
+                // md+
+                nav.classList.add('border', 'rounded-4');
+            }
+        }
+    }
+</script>
+
+</html>

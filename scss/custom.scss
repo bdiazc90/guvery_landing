@@ -1,0 +1,143 @@
+$guvery: #3CDBC0;
+$guvery-dark: #00594f;
+$primary: $guvery-dark;
+$secondary: $guvery;
+
+
+
+@import "../src/bootstrap-5.2.0/scss/functions";
+@import "../src/bootstrap-5.2.0/scss/variables";
+
+$box-shadow-bold: 0 0.5rem 1rem rgb(0 0 0 / 50%);
+
+$utilities: (
+  "shadow": (
+    property: box-shadow,
+    class: shadow,
+    values: (
+      null: $box-shadow,
+      sm: $box-shadow-sm,
+      lg: $box-shadow-lg,
+      bd: $box-shadow-bold,
+      none: none,
+    )
+  ),
+);
+
+
+$custom-colors: (
+  "guvery": $guvery,
+  "guvery-dark": $guvery-dark,
+);
+
+$custom-spacers: (
+  6: $spacer * 5,
+  7: $spacer * 7,
+  8: $spacer * 9,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$spacers: map-merge($spacers, $custom-spacers);
+
+
+@import "../src/bootstrap-5.2.0/scss/bootstrap";
+
+@import "../src/bootstrap-5.2.0/scss/utilities";
+
+
+
+// Font Axiforma
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma-Regular.eot");
+  src: url("../fonts/Axiforma-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Axiforma-Regular.woff") format("woff"),
+        url("../fonts/Axiforma-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma-Medium.eot");
+  src: url("../fonts/Axiforma-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Axiforma-Medium.woff") format("woff"),
+        url("../fonts/Axiforma-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma-SemiBold.eot");
+  src: url("../fonts/Axiforma-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Axiforma-SemiBold.woff") format("woff"),
+        url("../fonts/Axiforma-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma-Bold.eot");
+  src: url("../fonts/Axiforma-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Axiforma-Bold.woff") format("woff"),
+        url("../fonts/Axiforma-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bolder;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma-ExtraBold.eot");
+  src: url("../fonts/Axiforma-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Axiforma-ExtraBold.woff") format("woff"),
+        url("../fonts/Axiforma-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: extrabold;
+}
+
+// Font GothamPro
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/GothamPro.woff") format("woff"),
+        url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/GothamPro-Bold.woff") format("woff"),
+        url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/GothamPro-Black.woff") format("woff"),
+        url("../fonts/GothamPro-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: bold;
+}
+
+
+:root {
+  --bs-body-font-family: 'Axiforma', Arial, serif;
+}
+
+.btn {
+  font-family: "Gotham Pro", Arial, serif;
+}
+
+.ff-gotham {
+  font-family: "Gotham Pro", Arial, serif;
+}
+.ff-axiforma {
+  font-family: "Axiforma", Arial, serif;
+}
+
+
+
