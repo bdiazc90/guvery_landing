@@ -12175,6 +12175,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 992px) {
+  .vh-lg-100 {
+    height: 100vh !important;
+  }
+}
 @font-face {
   font-family: "Axiforma";
   src: url("../fonts/Axiforma-Regular.eot");
@@ -12194,21 +12199,21 @@ textarea.form-control-lg {
   src: url("../fonts/Axiforma-SemiBold.eot");
   src: url("../fonts/Axiforma-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma-SemiBold.woff") format("woff"), url("../fonts/Axiforma-SemiBold.ttf") format("truetype");
   font-weight: 600;
-  font-style: bold;
+  font-style: semibold;
 }
 @font-face {
   font-family: "Axiforma";
   src: url("../fonts/Axiforma-Bold.eot");
   src: url("../fonts/Axiforma-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma-Bold.woff") format("woff"), url("../fonts/Axiforma-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: bolder;
+  font-style: bold;
 }
 @font-face {
   font-family: "Axiforma";
   src: url("../fonts/Axiforma-ExtraBold.eot");
   src: url("../fonts/Axiforma-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma-ExtraBold.woff") format("woff"), url("../fonts/Axiforma-ExtraBold.ttf") format("truetype");
   font-weight: 800;
-  font-style: extrabold;
+  font-style: bolder;
 }
 @font-face {
   font-family: "Gotham Pro";
@@ -12229,7 +12234,7 @@ textarea.form-control-lg {
   src: url("../fonts/GothamPro-Black.eot");
   src: url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype");
   font-weight: 800;
-  font-style: bold;
+  font-style: bolder;
 }
 :root {
   --bs-body-font-family: "Axiforma", Arial, serif;

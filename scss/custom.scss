@@ -45,6 +45,13 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 @import "../src/bootstrap-5.2.0/scss/utilities";
 
+// heigth 100% only md:
+@media (min-width: 992px) {
+  .vh-lg-100 {
+      height: 100vh !important;
+  }
+}
+
 
 
 // Font Axiforma
@@ -73,7 +80,7 @@ $spacers: map-merge($spacers, $custom-spacers);
         url("../fonts/Axiforma-SemiBold.woff") format("woff"),
         url("../fonts/Axiforma-SemiBold.ttf") format("truetype");
   font-weight: 600;
-  font-style: bold;
+  font-style: semibold;
 }
 @font-face {
   font-family: "Axiforma";
@@ -82,7 +89,7 @@ $spacers: map-merge($spacers, $custom-spacers);
         url("../fonts/Axiforma-Bold.woff") format("woff"),
         url("../fonts/Axiforma-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: bolder;
+  font-style: bold;
 }
 @font-face {
   font-family: "Axiforma";
@@ -91,7 +98,7 @@ $spacers: map-merge($spacers, $custom-spacers);
         url("../fonts/Axiforma-ExtraBold.woff") format("woff"),
         url("../fonts/Axiforma-ExtraBold.ttf") format("truetype");
   font-weight: 800;
-  font-style: extrabold;
+  font-style: bolder;
 }
 
 // Font GothamPro
@@ -120,7 +127,7 @@ $spacers: map-merge($spacers, $custom-spacers);
         url("../fonts/GothamPro-Black.woff") format("woff"),
         url("../fonts/GothamPro-Black.ttf") format("truetype");
   font-weight: 800;
-  font-style: bold;
+  font-style: bolder;
 }
 
 
@@ -138,6 +145,3 @@ $spacers: map-merge($spacers, $custom-spacers);
 .ff-axiforma {
   font-family: "Axiforma", Arial, serif;
 }
-
-
-
