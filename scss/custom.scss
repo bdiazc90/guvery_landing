@@ -2,6 +2,7 @@ $guvery: #3CDBC0;
 $guvery-dark: #00594f;
 $primary: $guvery-dark;
 $secondary: $guvery;
+$whatsapp: #01E675;
 
 
 
@@ -28,6 +29,7 @@ $utilities: (
 $custom-colors: (
   "guvery": $guvery,
   "guvery-dark": $guvery-dark,
+  "whatsapp": $whatsapp,
 );
 
 $custom-spacers: (
@@ -139,9 +141,24 @@ $spacers: map-merge($spacers, $custom-spacers);
   font-family: "Gotham Pro", Arial, serif;
 }
 
+.fs-7 {
+  font-size: 0.8rem;
+}
+
 .ff-gotham {
   font-family: "Gotham Pro", Arial, serif;
 }
 .ff-axiforma {
   font-family: "Axiforma", Arial, serif;
 }
+
+.text-indigo {
+  color: $indigo;
+}
+
+.hr-gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+

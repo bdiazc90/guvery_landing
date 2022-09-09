@@ -39,6 +39,7 @@
   --bs-dark: #212529;
   --bs-guvery: #3CDBC0;
   --bs-guvery-dark: #00594f;
+  --bs-whatsapp: #01E675;
   --bs-primary-rgb: 0, 89, 79;
   --bs-secondary-rgb: 60, 219, 192;
   --bs-success-rgb: 25, 135, 84;
@@ -49,6 +50,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-guvery-rgb: 60, 219, 192;
   --bs-guvery-dark-rgb: 0, 89, 79;
+  --bs-whatsapp-rgb: 1, 230, 117;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3210,6 +3212,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #00594f;
 }
 
+.btn-whatsapp {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #01E675;
+  --bs-btn-border-color: #01E675;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #27ea8a;
+  --bs-btn-hover-border-color: #1ae983;
+  --bs-btn-focus-shadow-rgb: 1, 196, 99;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #34eb91;
+  --bs-btn-active-border-color: #1ae983;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #01E675;
+  --bs-btn-disabled-border-color: #01E675;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #00594f;
   --bs-btn-border-color: #00594f;
@@ -3377,6 +3396,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #00594f;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #00594f;
+  --bs-gradient: none;
+}
+
+.btn-outline-whatsapp {
+  --bs-btn-color: #01E675;
+  --bs-btn-border-color: #01E675;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #01E675;
+  --bs-btn-hover-border-color: #01E675;
+  --bs-btn-focus-shadow-rgb: 1, 230, 117;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #01E675;
+  --bs-btn-active-border-color: #01E675;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #01E675;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #01E675;
   --bs-gradient: none;
 }
 
@@ -5009,6 +5045,15 @@ textarea.form-control-lg {
   color: #002a26;
 }
 
+.alert-whatsapp {
+  --bs-alert-color: #005c2f;
+  --bs-alert-bg: #ccfae3;
+  --bs-alert-border-color: #b3f8d6;
+}
+.alert-whatsapp .alert-link {
+  color: #004a26;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5447,6 +5492,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #00352f;
   border-color: #00352f;
+}
+
+.list-group-item-whatsapp {
+  color: #005c2f;
+  background-color: #ccfae3;
+}
+.list-group-item-whatsapp.list-group-item-action:hover, .list-group-item-whatsapp.list-group-item-action:focus {
+  color: #005c2f;
+  background-color: #b8e1cc;
+}
+.list-group-item-whatsapp.list-group-item-action.active {
+  color: #fff;
+  background-color: #005c2f;
+  border-color: #005c2f;
 }
 
 .btn-close {
@@ -7055,6 +7114,11 @@ textarea.form-control-lg {
   background-color: RGBA(0, 89, 79, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-whatsapp {
+  color: #000 !important;
+  background-color: RGBA(1, 230, 117, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #00594f !important;
 }
@@ -7123,6 +7187,13 @@ textarea.form-control-lg {
 }
 .link-guvery-dark:hover, .link-guvery-dark:focus {
   color: #00473f !important;
+}
+
+.link-whatsapp {
+  color: #01E675 !important;
+}
+.link-whatsapp:hover, .link-whatsapp:focus {
+  color: #34eb91 !important;
 }
 
 .ratio {
@@ -7611,6 +7682,11 @@ textarea.form-control-lg {
 .border-guvery-dark {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-guvery-dark-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-whatsapp {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-whatsapp-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8677,6 +8753,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-guvery-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-whatsapp {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-whatsapp-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8776,6 +8857,11 @@ textarea.form-control-lg {
 .bg-guvery-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-guvery-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-whatsapp {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-whatsapp-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -12244,10 +12330,24 @@ textarea.form-control-lg {
   font-family: "Gotham Pro", Arial, serif;
 }
 
+.fs-7 {
+  font-size: 0.8rem;
+}
+
 .ff-gotham {
   font-family: "Gotham Pro", Arial, serif;
 }
 
 .ff-axiforma {
   font-family: "Axiforma", Arial, serif;
+}
+
+.text-indigo {
+  color: #6610f2;
+}
+
+.hr-gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }/*# sourceMappingURL=custom.css.map */

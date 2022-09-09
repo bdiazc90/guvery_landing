@@ -8,6 +8,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./scss/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.15/dist/css/splide.min.css">
     <title>Guvery</title>
 </head>
 
@@ -32,10 +33,10 @@
                             <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#precio">Precio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#testimonios">Testimonios</a>
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Cupones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Cupones</a>
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Preguntas & Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 btn btn-outline-secondary" href="#">Ingresar</a>
@@ -48,36 +49,43 @@
     
     <!-- Title, subtitle -->
     <div class="container-fluid w-100 h-100 vh-lg-100 mb-6 mb-lg-0">
-        <div class="d-flex flex-column-reverse flex-lg-row justify-content-end justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column-reverse flex-md-row justify-content-end justify-content-lg-between align-items-center">
             <!-- left, bottom -->
-            <div class="ms-2 ms-sm-5 ms-md-7 ms-lg-5 ms-xl-6 me-md-5 me-lg-5 text-start mt-lg-8" style="width: 100%;">
-                <h1 class="display-6 text-guvery lh-base" style="font-weight: 800 !important;">
-                    Compra en EE.UU.<br class="d-none d-md-block">
+            <div class="mt-md-8 ms-2 ms-md-4 ms-lg-5 ms-xl-6 text-center text-md-start" style="width: 100%;">
+                <h1 class="display-6 text-guvery lh-base my-0" style="font-weight: 800 !important; filter: drop-shadow(0 0 2px #fff)">
+                    Compra en USA<br class="d-none d-md-block">
                     desde Perú y ahorra
                 </h1>
-                <h2 class="mt-1 mt-lg-2 mt-xl-3 text-muted fw-normal lh-base" style="max-width: 600px; font-size: 14px;">
-                    Encarga tus compras a viajeros calificados.<br>
-                    <strong>Guvery lo hace 100% seguro y fácil para ti.</strong>
+                <h2 class="mt-0 mt-md-2 mt-xl-3 text-muted fw-normal lh-base" style="font-size: 17px;">
+                    <strong>
+                        ✈️ &nbsp;Haz tus compras con viajeros.<br class="d-block d-sm-none d-md-block">
+                        🔐 &nbsp;<span class="text-decoration-underline">Guvery lo hace 100% seguro y fácil.</span>
+                    </strong>
                 </h2>
-                <div class="mt-4">
-                    <input type="text" class="form-control ff-axiforma border rounded-4 shadow mx-lg-0" placeholder="Pega el link del producto" style="width: 360px; font-size: 14px !important; max-height: 56px; padding: 21px; border-width: 2px;">
-                    <div class="d-flex align-items-center justify-content-start">
-                        <button type="button" class="btn btn-lg btn-primary shadow-bd my-4 rounded-4 fw-bolder py-2 px-4 fs-6" style="min-height: 56px; min-width: 130px; font-size: 12px !important;">Iniciar Pedido</button>
-                        <p class="text-start text-black text-opacity-25 text-uppercase fw-bold my-4 ps-2 ps-sm-4 pt-1 overflow-auto" style="max-width: 300px; font-size: 12px !important;">
-                            recibe ofertas de viajeros. <br> 
-                            Solo pagas si aceptas una.
-                        </p>
+                <div class="mt-5">
+                    <div class="mx-auto ms-md-0" style="max-width: 360px;">
+                        <div class="form-floating">
+                            <input id="order_url" type="text" class="form-control ff-gotham border rounded-4 shadow mx-lg-0 text-primary fw-bold" placeholder="Pega el link del producto" style="width: 350px; font-size: 14px !important; max-height: 56px; padding: 16px; border-width: 2px;">
+                            <label for="order_url" class="text-start text-muted opacity-50 ms-2 fw-bold" style="font-size: 14px; padding: 12px;">Pega el link del producto</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start">
+                            <button type="button" class="btn btn-lg btn-primary shadow-bd rounded-4 fw-bolder py-2 px-3 fs-6" style="min-height: 56px; min-width: 130px; font-size: 13px !important;">Iniciar Pedido</button>
+                            <p class="text-start text-black text-opacity-25 text-uppercase fw-bold my-4 ps-3 pt-1 overflow-auto" style="max-width: 300px; font-size: 12px !important;">
+                                recibe ofertas de viajeros. <br> 
+                                Solo pagas si aceptas una.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- rigth, top  -->
-            <div class="text-center mt-6 mt-md-8 mb-4 me-lg-4 me-xl-5 align-self-center align-self-lg-start" style="width: 100%; height:100%;">
-                <div class="row m-0 p-0">
-                    <div class="col-10 col-md-6 col-lg-10 mx-auto">
+            <div class="text-center mt-6 mt-md-8 mb-4 me-lg-4 me-xl-5 align-self-center align-self-lg-start" style="width: 100%; height:100%; background: url('./images/circle-landing-guvery.png') no-repeat;">
+                <div class="row my-0 mx-auto ms-md-auto" style="max-width: 540px; ">
+                    <div class="col-10 col-md-12 mx-auto">
                         <div class="rounded-4 border border-5 border-guvery position-relative">
-                            <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-3 d-block w-100" alt="Foto" style="max-width: 100%; height: auto;">
+                            <img src="/images/alv_cco_1_min.jpg" class="img-responsive rounded-3 d-block w-100" alt="Foto">
                             <div class="position-absolute top-50 start-0 w-100 h-100">
-                                <div id="carouselExampleIndicators" class="carousel carousel-light slide p-1" data-bs-ride="carousel">
+                                <div id="carouselExampleIndicators" class="carousel carousel-light slide p-1 shadow" data-bs-touch="true" data-bs-ride="carousel" style="background: rgba(0,0,0,0.2);">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" data-bs-interval="3000">
                                             <h3 class="text-white fs-1 d-block m-1 px-3" style="filter: drop-shadow(0 0 0.3rem #000);">📦 19,000+ entregas</h3>
@@ -107,10 +115,14 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center mt-4 mt-lg-5">
-            <div style="max-width: 378px;">
-                <blockquote class="blockquote text-center">
-                    <p class="h6 text-black opacity-75"><strong>" La plataforma peruana más confiable para traer pedidos desde EE.UU. con viajeros. "</strong></p>
+        <div class="d-flex justify-content-center align-items-center mt-5" style="min-height: 160px;">
+            <div style="max-width: 500px;" class="mx-1">
+                <blockquote class="blockquote text-center mb-4">
+                    <p class="h5 text-black opacity-75">
+                        <span class="text-danger fw-bold">"</span>
+                        <strong>La plataforma peruana más confiable para traer pedidos desde EE.UU. con viajeros.</strong>
+                        <span class="text-danger fw-bold">"</span>
+                    </p>
                 </blockquote>
                 <div class="text-center h6 text-warning mb-0">
                     <i class="bi bi-star-fill"></i>
@@ -131,15 +143,65 @@
             </div>
         </div>
     </div>
+    <!-- Comodin -->
+    <div class="d-none d-lg-block my-4" style="height: 30px;"></div>
+    <!-- Logo tiendas EEUU -->
+    <div class="mt-2 mx-2 mx-md-4 mx-lg-5 mx-xl-6">
+        <div id="splideBrands" class="splide px-6" aria-label="Basic Structure Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png" alt="Logo de Amazon" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png" alt="Logo de eBay" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png" alt="Logo de Apple" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png" alt="Logo de Walmart" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Best_Buy_logo_2018.svg" alt="Logo de BestBuy" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/03/Sephora-Logo-1.png" alt="Logo de Sephora" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/640px-Logo_NIKE.svg.png" alt="Logo de Nike" height="30px" style="filter: grayscale(100%)">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- Cómo funciona -->
-    <hr class="mt-5">
-    <div class="container-fluid my-6">
-        <h2 id="comofunciona" class="ms-1 ms-sm-3 ms-md-4 ms-lg-5 ms-xl-6 display-4 text-primary fw-bold ff-gotham text-start">Cómo funciona</h2>
-        <h5 class="mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6 opacity-75">
-            Imagina que puedas encargarle a un viajero (que no conoces): comprar un producto en EE.UU. y traerlo a Perú, para ti.
-            <strong class="text-black opacity-1">😮 Guvery lo hace posible.</strong>
-        </h5>
-        <h5 class="mt-3 mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6 opacity-50">Nuestra plataforma les permite colaborar de manera segura: Recibimos el dinero de la compra, y lo guardamos hasta que el viajero cumpla su parte (comprar, traer y entregar).</h5>
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <h3 id="comofunciona" class="text-center text-primary fw-bold ff-gotham">Cómo funciona</h3>
+        <blockquote class="blockquote text-center mb-4 mx-auto" style="max-width: 500px;">
+            <p class="h5 text-muted">
+                <strong>
+                    Imagina que puedas encargarle a un viajero: comprar un producto en USA y traerlo a Perú.
+                    <br>
+                    <span class="text-indigo text-decoration-underline fw-bolder lh-lg">Guvery lo hace posible en 4 pasos:</span>
+                </strong>
+            </p>
+        </blockquote>
         <div class="row">
             <!-- SVG -->
             <div class="col-12 col-md-5 col-lg-6">
@@ -152,7 +214,7 @@
             </div>
             <!-- Numbers -->
             <div class="mt-5 col-12 col-md-7 col-lg-6">
-                <div class="mx-auto" style="max-width: 500px;">
+                <div class="mx-auto" style="max-width: 400px;">
                     <!-- 1 -->
                     <div class="d-flex flex-row align-items-center">
                         <div class="mt-0 mt-md-2"><span class="display-1 text-guvery ms-2">1</span></div>
@@ -174,25 +236,224 @@
                         <div class="mt-0 mt-md-2"><span class="display-1 text-guvery">3</span></div>
                         <div class="h6 ms-2 lh-base">
                             <strong>Se creará un Acuerdo entre ustedes.</strong><br class="d-none d-sm-block d-md-none d-lg-block">
-                            <span class="text-muted">Realizas el pago total a Guvery y será asegurado hasta que recibas tu pedido.</span>
+                            <span class="text-muted"><span class="text-indigo opacity-75">Realiza el pago total a Guvery</span>. El dinero estará seguro hasta que recibas tu pedido.</span>
                         </div>
                     </div>
                     <!-- 4 -->
                     <div class="d-flex flex-row align-items-center mt-2">
                         <div class="mt-0 mt-md-2"><span class="display-1 text-guvery">4</span></div>
                         <div class="h6 ms-2 lh-base">
-                            <strong>El viajero comprará tu pedido, con su dinero.</strong><br class="d-none d-sm-block d-md-none d-lg-block">
-                            <span class="text-muted">Y lo traerá en su viaje. Una vez confirmes la entrega, Guvery le pagará.</span>
+                            <strong>El viajero comprará tu pedido, <span class="text-indigo">con su dinero</span>.</strong><br class="d-none d-sm-block d-md-none d-lg-block">
+                            <span class="text-muted">Y lo traerá en su viaje. Una vez confirmes la entrega, <span class="text-indigo opacity-75">Guvery le pagará</span>.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Prensa -->
-    <hr>
-    <div class="container-fluid my-6">
-        <div class="mx-auto d-flex flex-wrap gap-4 gap-lg-5 justify-content-center" style="max-width: 700px;">
+    <!-- Tiempos de entrega -->
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <div class="mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6">
+            <h4 class="text-center text-primary fw-bold ff-gotham">Tiempos de entrega promedio</h4>
+            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">desde que aceptas una oferta hasta que tu pedido está en Lima.</h6>
+            <div class="row">
+                <div class="col-12 col-sm-6 ps-sm-0 mt-4">
+                    <div class="card border border-4 rounded-4">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark opacity-75 text-center display-5">⚡️</h4>
+                            <h4 class="card-title text-primary text-center display-6">3 - 7 días<sup class="text-indigo opacity-50">*</sup></h4>
+                            <h6 class="card-title text-black fw-bold text-center h6">Se puede lograr cuando:</h6>
+                            <ul class="list-group list-group-flush opacity-75 small">
+                                <li class="list-group-item">La tienda es conocida y fácil de comprar.</li>
+                                <li class="list-group-item">Tiene envío rápido / ofrece pick-up.</li>
+                                <li class="list-group-item">La comisión al viajero es atractiva.</li>
+                                <li class="list-group-item">El producto es pequeño / ligero.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 pe-sm-0 mt-4">
+                    <div class="card border border-4 rounded-4">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark opacity-75 text-center display-5">⏱</h4>
+                            <h4 class="card-title text-primary text-center display-6">7 - 15 días<sup class="text-indigo opacity-50">*</sup></h4>
+                            <h6 class="card-title text-black fw-bold text-center h6">Generalmente cuando:</h6>
+                            <ul class="list-group list-group-flush opacity-75 small">
+                                <li class="list-group-item">La tienda es poco conocida / difícil para comprar.</li>
+                                <li class="list-group-item">No hay pick-up y el envío es regular.</li>
+                                <li class="list-group-item">La comisión al viajero es baja.</li>
+                                <li class="list-group-item">El producto es grande / pesado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="mt-4 text-center text-indigo opacity-75 ff-gotham">* Revisa la fecha de entrega exacta antes de aceptar una oferta.</h6>
+        </div>
+    </div>
+    <!-- Testimonios y prensa -->
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <!-- Testimonios -->
+        <div class="mt-2 mx-2 mx-md-4 mx-lg-5 mx-xl-6">
+            <h4 class="text-center text-primary fw-bold ff-gotham">Comunidad y Prensa</h4>
+            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Cuando estas comprometido con tus usuarios, se nota ;)</h6>
+            <div id="splideTestimonials" class="splide px-6 my-4" aria-label="Testimonios">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_miguelangelesp_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Miguel E.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Guvery es una de las mejores experiencias de compra que he tenido en mi vida.
+                                            Realmente se han enfocado en dar esa tranquilidad que necesitamos al momento de comprar productos en el extranjero.
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_katherineperez_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Katherine P.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Me tranquiliza saber que el pago está asegurado hasta que yo reciba el producto.
+                                            Esta vez pedí un iPhone y llego en 5 días! Siempre que puedo los recomiendo porque son súper eficientes y atentos. 😁
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_jeanpaulatuncar_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Jean Paul A.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Leí los testimonios de este servicio y fue la pieza clave para confiar.
+                                            Cumplieron con la fecha y los pedidos llegaron bien. Estoy feliz de tener mis herramientas de trabajo a un precio accesible gracias a Guvery. 🥳💚 
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_alvarotobaru_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Alvaro T.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Al principio me sentí incrédulo, pero al ver la transparencia del equipo y el profesionalismo con el que se manejan los pedidos, decidí arriesgarme.
+                                            Gracias a Guvery he podido traer los productos que tanto quería.
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_martinzegarra_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Martin Z.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            La verdad fue una experiencia muy agradable, muy rápido y sencillo. No tuve ningún problema, le recomiendo a todos probar Guvery. 💪                                    
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_joelrivera_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Joel R.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Nada como nuevos juegos de mesa para disfrutar en casa. Gracias Guvery ⭐️.
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 250px;">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <img src="https://storage.googleapis.com/guvery-cdn/public_images/testimonios/g3_diegofernandez_testimonio_1.png" alt="Testimonio" class="rounded-circle mx-auto" style="object-fit: cover; width: 120px; height: 120px;">
+                                            <span class="position-absolute top-100 start-50 translate-middle px-4 py-2 bg-primary rounded-pill text-white fs-7 fw-bold" style="width: 75%;">
+                                                <span>Diego F.</span>
+                                            </span>
+                                        </div>
+                                        
+                                        <blockquote class="mt-4 mb-0 text-muted fs-7">
+                                            <sup>"</sup>
+                                            Necesitaba recoger con urgencia el keyboard y los contacté diciendo que llegaría después de las 6pm.
+                                            Me respondieron rápido y me esperaron. Me gustó la rápidez de su respuesta y la atención. 😃                                    
+                                            <sub>"</sub>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto d-flex flex-wrap gap-4 gap-lg-5 justify-content-around" style="max-width: 800px;">
             <div class="align-self-center">
                 <img src="./images/logo_elcomercio.png" alt="El Comercio" style="max-width: 130px; filter: invert(1) opacity(0.6) drop-shadow(1px 2px 0.2rem #aaa);">
             </div>
@@ -218,68 +479,66 @@
                 <img src="./images/logo_pbo.png" alt="PBO" style="max-width: 130px; filter: grayscale(1) invert(0) opacity(0.5) drop-shadow(1px 1px 0.2rem #aaa);">
             </div>
         </div>
-        <p class="mt-5 text-center text-muted opacity-75 h5">Múltiples medios e instituciones hablan de Guvery</p>
     </div>
     <!-- Precio -->
-    <hr>
-    <div class="container-fluid my-6">
-        <h2 id="precio" class="ms-1 ms-sm-3 ms-md-4 ms-lg-5 ms-xl-6 display-4 text-primary fw-bold ff-gotham text-start">Precio</h2>
-        <h4 class="ms-1 ms-sm-3 ms-md-4 ms-lg-5 ms-xl-6 opacity-50 fw-bold text-start">El éxito de Guvery es ser transparente:</h4>
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Precio</h3>
+        <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Si queremos hablar de confianza, debemos ser transparentes</h6>
         <div class="mx-auto mt-5 d-flex flex-column flex-md-row gap-2 gap-lg-3 gap-xl-4 justify-content-center">
             <!-- Precio real -->
             <div class="align-self-center text-center">
-                <div class="bg-guvery bg-opacity-50 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
+                <div class="bg-warning bg-opacity-75 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/carts.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
                 <p class="mt-3 mb-0 fw-bold">Precio real del producto</p>
-                <p class="mt-1 fs-6 text-muted">(Precio de lista + TAX en EE.UU.)<sup class="opacity-75">&nbsp;1</sup> </p>
+                <p class="mt-1 fs-6 text-muted">Precio de lista + TAX en EE.UU.<sup class="text-indigo">&nbsp;1</sup> </p>
             </div>
             <!-- + -->
-            <div class="align-self-center text-center display-1 opacity-25">+</div>
+            <div class="align-self-center text-center display-1 text-warning opacity-75">+</div>
             <!-- Viajero -->
             <div class="align-self-center text-center">
-                <div class="bg-guvery bg-opacity-50 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
+                <div class="bg-warning bg-opacity-75 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/suitcase.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
                 <p class="mt-3 mb-0 fw-bold">Comisión del viajero</p>
-                <p class="mt-1 fs-6 text-muted">(Depende de cada viajero)</p>
+                <p class="mt-1 fs-6 text-muted">Depende de cada viajero</p>
             </div>
             <!-- + -->
-            <div class="align-self-center text-center display-1 opacity-25">+</div>
+            <div class="align-self-center text-center display-1 text-guvery opacity-50">+</div>
             <!-- Guvery -->
             <div class="align-self-center text-center">
                 <div class="bg-guvery bg-opacity-50 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/credit-card.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
-                <p class="mt-3 mb-0 fw-bold">Servicio de Guvery</p>
-                <p class="mt-1 fs-6 text-muted">(7% del subtotal<sup class="opacity-75">2</sup> + 1$)<sup class="opacity-75">&nbsp;3</sup></p>
+                <p class="mt-3 mb-0 fw-bold">Servicio de Guvery<span class="text-indigo">*</span></p>
+                <p class="mt-1 fs-6 text-muted"><strong class="text-warning">7% del subtotal</strong> + <span class="price-decimal text-primary">1</span></p>
             </div>
             <!-- = -->
             <div class="align-self-center text-center display-1 opacity-25">=</div>
             <!-- Total -->
             <div class="align-self-center text-center">
-                <div class="bg-guvery bg-opacity-50 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
+                <div class="bg-dark bg-opacity-25 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/money.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
-                <p class="mt-3 mb-0 fw-bold">Total a pagar<sup class="opacity-75">4</sup></p>
-                <p class="mt-1 fs-6 text-muted">(Reembolso 100% garantizado)</p>
+                <p class="mt-3 mb-0 fw-bold">Total a pagar<sup class="text-indigo">&nbsp;2</sup></p>
+                <p class="mt-1 fs-6 text-muted">Reembolso 100% garantizado</p>
             </div>
         </div>
         <!-- disclaimer precio -->
-        <div class="mt-4 mx-auto text-muted opacity-75" style="max-width: 380px; font-size: 12px;">
-            1. Algunas tiendas agregan costos de envío.<br>
-            2. Subtotal = Precio real + Comisión del viajero.<br>
-            3. El 7% llega a un tope de 59$.<br>
-            4. El recojo en Lima, en el domicilio del viajero es gratis.<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Si deseas un envío a domicilio, habrá un costo extra.
+        <div class="mt-2 text-center text-primary opacity-50" style="font-size: 12px;">
+            <p class="d-block d-md-inline m-0"><span class="text-indigo">1.</span> Algunas tiendas agregan costos de envío.</p>
+            <span class="d-none d-md-inline">&nbsp;&nbsp;&nbsp;</span>
+            <p class="d-block d-md-inline m-0"><span class="text-indigo">2.</span> Recojo en Lima gratis / envío a domicilio = costo extra.</p>
         </div>
+        <h6 class="mt-4 text-center text-indigo opacity-75 ff-gotham">* El 7% llega hasta <span class="price-decimal fw-bold">59</span> 😇</h6>
         <!-- Ejemplos -->
         <div class="mt-5 mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
+            <div class="accordion border border-4 rounded-4" id="accordionExample">
+                <div class="accordion-item border border-0">
+                  <h2 class="accordion-header border border-0 rounded-5 m-1" id="headingOne">
                     <button class="accordion-button px-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <h4 class="m-0 opacity-25 fw-bold text-start text-decoration-underline">Ver 3 Ejemplos:</h4>
+                        <h4 class="m-0 opacity-50 fw-bold text-start text-decoration-underline">Ver 3 Ejemplos:</h4>
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -390,17 +649,160 @@
                 </div>
             </div>
         </div>
+        <!-- Bancos -->
+        <h5 class="mt-5 mb-4 text-center text-muted opacity-75 fw-bold ff-gotham">Pagos vía transferencia bancaria ó tarjeta de crédito con ZiPago*</h5>
+        <div id="splideBanks" class="splide px-6 mb-6" aria-label="Basic Structure Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://guvery.com/images/logo_BCP.png" alt="Logo de BCP" height="80px">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://guvery.com/images/logo_BBVA.png" alt="Logo de BBVA" height="80px">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://guvery.com/images/logo_SCO.png" alt="Logo de Scotiabank" height="80px">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <img src="https://guvery.com/images/logo_IBK.png" alt="Logo de Interbank" height="80px">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <!-- Testimonios -->
-    <hr>
-    <div class="container-fluid my-6">
-        <h2 id="testimonios" class="ms-1 ms-sm-3 ms-md-4 ms-lg-5 ms-xl-6 display-4 text-primary fw-bold ff-gotham text-start">Testimonios</h2>
-        <h4 class="ms-1 ms-sm-3 ms-md-4 ms-lg-5 ms-xl-6 opacity-50 fw-bold text-start">Nuestra comunidad se hace escuchar:</h4>
+    <!-- Cupones -->
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Cupones</h3>
+        <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Lanzamos cupones constantemente solo para los usuarios registrados</h6>
+        <div class="my-4 text-center">
+            <a href="" class="btn btn-outline-primary rounded-pill p-4 fw-bold shadow"><i class="bi bi-ticket-perforated"></i></i>&nbsp;&nbsp;Revisar Cupones</a>
+        </div>
     </div>
-    
+    <!-- Contacto -->
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Contacto</h3>
+        <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Guvery funciona 24x7</h6>
+        <h6 class="text-center text-muted ff-gotham mx-auto" style="max-width: 500px;">Pero nuestra canal de atención personalizada por whatsapp es de Lunes a Viernes de 9am a 5pm</h6>
+        <div class="my-4 text-center">
+            <a href="" class="btn btn-whatsapp rounded-pill p-4 ff-axiforma text-white fw-bold shadow"><i class="bi bi-whatsapp"></i></i>&nbsp;&nbsp;+51 960684330</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
+        <div class="container py-4 py-md-5 px-4 px-md-3">
+          <div class="row">
+            <div class="col-6 col-lg-3 mb-3">
+              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="384.000000pt" height="384.000000pt" viewBox="0 0 384.000000 384.000000"
+                    preserveAspectRatio="xMidYMid meet" style="max-width: 32px; max-height: 32px;">
+
+                    <g transform="translate(0.000000,384.000000) scale(0.100000,-0.100000)"
+                    fill="#00594f" stroke="none">
+                    <path d="M2610 3815 c-9 -10 -11 -37 -8 -83 7 -88 42 -158 125 -244 l65 -67
+                    -28 -51 c-35 -65 -96 -121 -174 -160 -103 -52 -194 -70 -405 -80 -253 -13
+                    -367 -40 -549 -133 -130 -66 -232 -143 -337 -255 -77 -82 -90 -92 -121 -92
+                    -61 0 -210 -30 -302 -61 -447 -150 -754 -541 -795 -1015 -11 -118 -2 -154 39
+                    -154 36 0 47 25 53 127 24 376 265 731 611 898 103 50 242 93 330 102 56 6 59
+                    5 52 -13 -45 -112 -45 -299 -1 -429 37 -111 82 -180 194 -300 106 -112 150
+                    -186 176 -296 36 -154 3 -288 -126 -519 -45 -80 -39 -106 58 -238 112 -150
+                    116 -157 166 -257 54 -109 73 -165 91 -272 25 -138 80 -223 146 -223 69 0 110
+                    80 117 230 6 116 -15 217 -77 365 -23 55 -53 126 -66 157 -35 82 -46 150 -35
+                    219 14 83 40 135 131 264 89 126 148 243 176 350 26 98 26 322 0 420 -87 334
+                    -360 585 -690 637 l-77 12 53 54 c114 117 277 219 436 272 111 36 203 51 392
+                    60 206 10 311 33 425 93 113 60 215 190 232 294 6 33 1 39 -75 116 -68 69
+                    -123 150 -110 163 4 3 212 -79 299 -119 83 -38 166 -50 240 -37 73 13 107 7
+                    177 -31 28 -16 76 -34 105 -39 172 -33 183 -39 153 -86 -32 -48 -102 -78 -256
+                    -110 -148 -31 -313 -129 -408 -242 -104 -126 -133 -194 -202 -487 -29 -121
+                    -61 -244 -73 -274 -25 -69 -88 -133 -152 -154 -108 -37 -173 -11 -182 75 -5
+                    40 -3 48 17 58 45 24 130 49 135 39 9 -14 61 -11 74 4 6 8 20 136 33 290 18
+                    227 19 279 9 291 -16 19 -55 21 -70 3 -6 -7 -17 -103 -26 -213 -23 -288 -12
+                    -258 -105 -289 -143 -48 -175 -82 -165 -180 11 -119 83 -189 194 -188 121 1
+                    223 54 288 150 38 57 46 82 103 320 71 296 113 398 200 496 103 114 219 179
+                    387 216 220 48 303 113 303 236 0 35 -6 52 -24 70 -25 25 -96 50 -173 60 -26
+                    3 -81 23 -122 43 l-75 37 -140 0 -141 0 -115 52 c-136 61 -325 133 -350 133
+                    -10 0 -23 -7 -30 -15z m-1182 -1271 c269 -55 492 -250 576 -504 55 -165 55
+                    -325 0 -490 -30 -88 -54 -132 -144 -260 -80 -113 -115 -180 -135 -257 -31
+                    -120 -15 -225 63 -398 80 -176 105 -265 105 -370 1 -61 -4 -101 -15 -125 l-16
+                    -35 -21 48 c-11 27 -21 61 -21 75 -1 81 -70 269 -150 403 -23 39 -75 115 -116
+                    169 -41 54 -74 106 -74 115 0 9 9 30 20 45 33 46 98 191 115 255 25 94 30 228
+                    11 315 -26 126 -81 222 -199 348 -58 62 -117 136 -134 169 -81 152 -89 316
+                    -23 488 12 31 45 32 158 9z"/>
+                    </g>
+                </svg>
+                &nbsp;
+                <span class="fs-5 ff-gotham fw-bold text-primary">Guvery.com</span>
+              </a>
+              <ul class="list-unstyled small text-muted">
+                <li class="mb-2">Pensando en la comunidad peruana de compradores y viajeros 💚 diseñado y construido por el equipo de:</li>
+                <li class="mb-2 fw-bold">GUVERY LATAM SAC.</li>
+                <li class="mb-2 fw-bold">RUC: 20601761344</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <h5>Síguenos</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                        <i class="bi bi-facebook h5" style="color: #007bf3;"></i><span>&nbsp;</span><span>guveryoficial (15k)</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                        <i class="bi bi-instagram h5" style="color: #c13584"></i><span>&nbsp;</span><span>guveryoficial (3k)</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                        <i class="bi bi-youtube h5" style="color: #fe0000"></i><span>&nbsp;</span><span>GuveryOficial (5k)</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                        <i class="bi bi-tiktok h5" style="color: #000"></i><span>&nbsp;</span><span>guveryoficial (0.5k)</span>
+                    </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/docs/5.2/getting-started/">Calculadora</a></li>
+                <li class="mb-2"><a href="/docs/5.2/examples/starter-template/">Testimonios</a></li>
+                <li class="mb-2"><a href="/docs/5.2/getting-started/webpack/">Guvery ONE</a></li>
+                <li class="mb-2"><a href="/docs/5.2/getting-started/parcel/">Blog de Guvery</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <h5>Legal</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Terminos y condiciones</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Política de privacidad</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/rfs">Aduanas de Perú</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">TSA regulación aérea</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-2 text-center">
+            <a href="" class="h5 text-decoration-none link-dark border-bottom border-dark"><i class="bi bi-book"></i>&nbsp;Libro de Reclamaciones</a>
+          </div>
+        </div>
+      </footer>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.15/dist/js/splide.min.js"></script>
 <script src="./js/sizes.js"></script>
 <script src="./js/landing_utils.js"></script>
 <script type="text/javascript">
@@ -438,6 +840,69 @@
             }
         }
     }
+</script>
+<script>
+    var splideBrands = new Splide('#splideBrands', {
+        type: 'loop',
+        perPage: 6,
+        arrows: true,
+        pagination: false,
+        gap: 2,
+        breakpoints: {
+            480: {
+                perPage: 1,
+            },
+            600: {
+                perPage: 2,
+            },
+            768: {
+                perPage: 3,
+            },
+            992: {
+                perPage: 4,
+            },
+            1200: {
+                perPage: 5,
+            },
+        }
+    });
+    splideBrands.mount();
+    var splideTestimonials = new Splide('#splideTestimonials', {
+        type: 'loop',
+        perPage: 3,
+        arrows: true,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+        gap: 2,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+            992: {
+                perPage: 2,
+            },
+        }
+    });
+    splideTestimonials.mount();
+    var splideBanks = new Splide('#splideBanks', {
+        type: 'loop',
+        perPage: 4,
+        arrows: true,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+        gap: 2,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+            992: {
+                perPage: 2,
+            },
+        }
+    });
+    splideBanks.mount();
 </script>
 
 </html>
