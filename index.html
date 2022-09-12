@@ -15,7 +15,7 @@
 <body>
     <!-- Navbar -->
     <div class="container-md fixed-top px-0">
-        <nav class="navbar navbar-expand-md navbar-light bg-white p-md-3 shadow border rounded-4 my-md-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-md-3 shadow border rounded-4 my-md-2">
             <div class="container-sm">
                 <a href="#" class="navbar-brand">
                     <img src="./images/logotipo_guvery_sm.png" alt="Logo de Guvery" width="130">
@@ -29,14 +29,20 @@
                         <li class="nav-item">
                             <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#comofunciona">Cómo funciona</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle ff-gotham fw-bold fs-6 text-one px-3 my-sm-2 my-md-0" href="#one" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guvery ONE</a>
+                            <ul class="dropdown-menu ff-gotham shadow-sm">
+                                <p class="py-1 px-3 mb-0 text-muted fw-bold">Productos con precio final. Pídelos en 1 clic.</p>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item fw-bold" href="http://www.guvery.com/one/">➤ Más info <img src="http://www.guvery.com/images/one/one_logo_md.png" width="36" alt="Guvery ONE logo"></a></li>
+                                <li><a class="dropdown-item fw-bold" href="http://www.guvery.com/one/productos">➤ Catálogo <img src="http://www.guvery.com/images/one/one_logo_md.png" width="36" alt="Guvery ONE logo"></a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#precio">Precio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Cupones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Preguntas & Contacto</a>
+                            <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 my-sm-2 my-md-0" href="#">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ff-gotham fw-bold fs-6 text-guvery-dark px-3 btn btn-outline-secondary" href="#">Ingresar</a>
@@ -52,17 +58,17 @@
         <div class="d-flex flex-column-reverse flex-md-row justify-content-end justify-content-lg-between align-items-center">
             <!-- left, bottom -->
             <div class="mt-md-8 ms-2 ms-md-4 ms-lg-5 ms-xl-6 text-center text-md-start" style="width: 100%;">
-                <h1 class="display-6 text-guvery lh-base my-0" style="font-weight: 800 !important; filter: drop-shadow(0 0 2px #fff)">
+                <h1 class="display-5 text-guvery lh-base my-0" style="font-weight: 800 !important; filter: drop-shadow(0 0 2px #fff)">
                     Compra en USA<br class="d-none d-md-block">
                     desde Perú y ahorra
                 </h1>
-                <h2 class="mt-0 mt-md-2 mt-xl-3 text-muted fw-normal lh-base" style="font-size: 17px;">
+                <h2 class="mt-0 mt-md-2 mt-xl-3 text-muted fw-normal lh-base" style="font-size: 20px;">
                     <strong>
                         ✈️ &nbsp;Haz tus compras con viajeros.<br class="d-block d-sm-none d-md-block">
-                        🔐 &nbsp;<span class="text-decoration-underline">Guvery lo hace 100% seguro y fácil.</span>
+                        🔐 &nbsp;Guvery asegura tu dinero.
                     </strong>
                 </h2>
-                <div class="mt-5">
+                <div class="mt-4">
                     <div class="mx-auto ms-md-0" style="max-width: 360px;">
                         <div class="form-floating">
                             <input id="order_url" type="text" class="form-control ff-gotham border rounded-4 shadow mx-lg-0 text-primary fw-bold" placeholder="Pega el link del producto" style="width: 350px; font-size: 14px !important; max-height: 56px; padding: 16px; border-width: 2px;">
@@ -79,7 +85,7 @@
                 </div>
             </div>
             <!-- rigth, top  -->
-            <div class="text-center mt-6 mt-md-8 mb-4 me-lg-4 me-xl-5 align-self-center align-self-lg-start" style="width: 100%; height:100%; background: url('./images/circle-landing-guvery.png') no-repeat;">
+            <div class="text-center mt-6 mt-md-8 mb-4 me-lg-4 me-xl-5 align-self-center align-self-lg-start" style="width: 100%; height:100%;">
                 <div class="row my-0 mx-auto ms-md-auto" style="max-width: 540px; ">
                     <div class="col-10 col-md-12 mx-auto">
                         <div class="rounded-4 border border-5 border-guvery position-relative">
@@ -147,42 +153,106 @@
     <div class="d-none d-lg-block my-4" style="height: 30px;"></div>
     <!-- Logo tiendas EEUU -->
     <div class="mt-2 mx-2 mx-md-4 mx-lg-5 mx-xl-6">
-        <div id="splideBrands" class="splide px-6" aria-label="Basic Structure Example">
+        <h6 class="text-center text-indigo opacity-50 fw-bold ff-gotham">Más de 10,000 tiendas en Estados Unidos a tu alcance</h6>
+        <div id="splideBrands" class="splide px-6 mt-5" aria-label="Tiendas en EE.UU.">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png" alt="Logo de Amazon" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.amazon.com/?ref=www.guvery.com" title="Amazon.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png" alt="Logo Amazon.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>                            
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png" alt="Logo de eBay" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.ebay.com/?ref=www.guvery.com" title="eBay.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png" alt="Logo eBay.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png" alt="Logo de Apple" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.apple.com/?ref=www.guvery.com" title="Apple.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png" alt="Logo Apple.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png" alt="Logo de Walmart" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.walmart.com/?ref=www.guvery.com" title="Walmart.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png" alt="Logo Walmart.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Best_Buy_logo_2018.svg" alt="Logo de BestBuy" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.theordinary.com/?ref=www.guvery.com" title="TheOrdinary.com">
+                                <img src="https://seeklogo.com/images/T/the-ordinary-logo-6367E3AB69-seeklogo.com.png" alt="Logo TheOrdinary.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://1000marcas.net/wp-content/uploads/2020/03/Sephora-Logo-1.png" alt="Logo de Sephora" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.bestbuy.com/?ref=www.guvery.com" title="BestBuy.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Best_Buy_logo_2018.svg" alt="Logo BestBuy.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                     <li class="splide__slide">
                         <div class="splide__slide__container text-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/640px-Logo_NIKE.svg.png" alt="Logo de Nike" height="30px" style="filter: grayscale(100%)">
+                            <a target="_blank" href="https://www.sephora.com/?ref=www.guvery.com" title="Sephora.com">
+                                <img src="https://logodownload.org/wp-content/uploads/2021/06/sephora-logo.png" alt="Logo Sephora.com" height="30px" style="filter: grayscale(100%); padding: 8px;" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.nike.com/?ref=www.guvery.com" title="Nike.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/640px-Logo_NIKE.svg.png" alt="Logo Nike.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.adidas.com/?ref=www.guvery.com" title="Adidas.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png" alt="Logo Adidas.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.bhphotovideo.com/?ref=www.guvery.com" title="Bhphotovideo.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/B%26H_Foto_%26_Electronics_Logo.svg/2560px-B%26H_Foto_%26_Electronics_Logo.svg.png" alt="Logo BhPhotovideo.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.newegg.com/?ref=www.guvery.com" title="Newegg.com">
+                                <img src="https://1000marcas.net/wp-content/uploads/2021/05/Newegg-logo.png" alt="Logo Newegg.com" height="30px" style="filter: grayscale(100%)" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.target.com/?ref=www.guvery.com" title="Target.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Target_Corporation_logo_%28vector%29.svg/300px-Target_Corporation_logo_%28vector%29.svg.png" alt="Logo Target.com" height="30px" style="filter: grayscale(100%);" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.dell.com/?ref=www.guvery.com" title="Dell.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/1200px-Dell_Logo.png" alt="Logo dell.com" height="30px" style="filter: grayscale(100%);" class="hover-filter-none">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <a target="_blank" href="https://www.razr.com/?ref=www.guvery.com" title="Razr.com">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Logo_Razer_2017.png" alt="Logo razr.com" height="30px" style="filter: grayscale(100%);" class="hover-filter-none">
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -192,7 +262,7 @@
     <!-- Cómo funciona -->
     <hr class="hr-gradient my-6">
     <div class="container-fluid">
-        <h3 id="comofunciona" class="text-center text-primary fw-bold ff-gotham">Cómo funciona</h3>
+        <h2 id="comofunciona" class="text-center text-primary fw-bold ff-gotham display-4">Cómo funciona</h2>
         <blockquote class="blockquote text-center mb-4 mx-auto" style="max-width: 500px;">
             <p class="h5 text-muted">
                 <strong>
@@ -205,8 +275,8 @@
         <div class="row">
             <!-- SVG -->
             <div class="col-12 col-md-5 col-lg-6">
-                <div class="mx-auto" style="max-width: 400px;">
-                    <svg id="master-artboard" viewBox="0 0 1400 1400" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" enable-background="new 0 0 1400 1400" style="filter: drop-shadow(10px 10px 30px var(--bs-warning));">
+                <div class="mx-auto ms-md-auto me-md-5" style="max-width: 500px;">
+                    <svg id="master-artboard" viewBox="0 0 1400 1400" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" enable-background="new 0 0 1400 1400" style="filter: drop-shadow(10px 10px 30px var(--bs-indigo));">
                         <rect id="ee-background" x="0" y="0" width="1400" height="1400" style="fill: white; fill-opacity: 0; pointer-events: none;"/>
                         <path d="M 259.5 205 A 52 52 0 0 1 207.5 257 A 52 52 0 0 1 155.5 205 A 52 52 0 0 1 207.5 153 A 52 52 0 0 1 259.5 205 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, -42.77226955420315, 193.49360036425227)" style="fill: rgb(60, 219, 192);"/><path d="M 310.000006 301.399994 A 18.4 18.4 0 0 1 291.600006 319.799994 A 18.4 18.4 0 0 1 273.200006 301.399994 A 18.4 18.4 0 0 1 291.600006 282.999994 A 18.4 18.4 0 0 1 310.000006 301.399994 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path d="M 1156.299976 324.200012 A 33.200001 33.200001 0 0 1 1123.099976 357.400013 A 33.200001 33.200001 0 0 1 1089.899975 324.200012 A 33.200001 33.200001 0 0 1 1123.099976 291.000011 A 33.200001 33.200001 0 0 1 1156.299976 324.200012 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path d="M 145 657.599976 A 27 27 0 0 1 118 684.599976 A 27 27 0 0 1 91 657.599976 A 27 27 0 0 1 118 630.599976 A 27 27 0 0 1 145 657.599976 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path d="M 155.499994 892.099976 A 17.6 17.6 0 0 1 137.899994 909.699976 A 17.6 17.6 0 0 1 120.299994 892.099976 A 17.6 17.6 0 0 1 137.899994 874.499975 A 17.6 17.6 0 0 1 155.499994 892.099976 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(60, 219, 192);"/><path d="M 496.900013 1232.400024 A 34.700001 34.700001 0 0 1 462.200012 1267.100025 A 34.700001 34.700001 0 0 1 427.500011 1232.400024 A 34.700001 34.700001 0 0 1 462.200012 1197.700024 A 34.700001 34.700001 0 0 1 496.900013 1232.400024 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, -112.02261073719865, -69.25034118299556)" style="fill: rgb(0, 89, 79);"/><path d="M 556.8 1245.800049 A 12.3 12.3 0 0 1 544.5 1258.100049 A 12.3 12.3 0 0 1 532.2 1245.800049 A 12.3 12.3 0 0 1 544.5 1233.500049 A 12.3 12.3 0 0 1 556.8 1245.800049 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, -44.80904429487953, -12.220648444058043)" style="fill: rgb(60, 219, 192);"/><path d="M 867.400024 1233.599976 A 22 22 0 0 1 845.400024 1255.599976 A 22 22 0 0 1 823.400024 1233.599976 A 22 22 0 0 1 845.400024 1211.599976 A 22 22 0 0 1 867.400024 1233.599976 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path d="M 874.200025 1288 A 9.3 9.3 0 0 1 864.900024 1297.3 A 9.3 9.3 0 0 1 855.600024 1288 A 9.3 9.3 0 0 1 864.900024 1278.7 A 9.3 9.3 0 0 1 874.200025 1288 Z" fill="#F1CD8C" transform="matrix(-1.7376028604147749, 0, 0, -1.7376028604147749, 2442.0948878287154, 3431.3221372709186)" style="fill: rgb(60, 219, 192);"/><path d="M 962.599987 1234.800049 A 23.299999 23.299999 0 0 1 939.299988 1258.100048 A 23.299999 23.299999 0 0 1 915.999989 1234.800049 A 23.299999 23.299999 0 0 1 939.299988 1211.50005 A 23.299999 23.299999 0 0 1 962.599987 1234.800049 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 93.69163807111158, -101.83873703381698)" style="fill: rgb(60, 219, 192);"/><path fill="#F1CD8C" d="M1203.5,758.6c-3.3,0-6.4,0.4-9.4,1.3c2.4-19.6,3.6-39.6,3.6-59.8c0-274.8-222.8-497.6-497.6-497.6&#10;&#9;&#9;&#9;S202.4,425.2,202.4,700c0,16.6,0.8,32.9,2.4,49.1c-27.4,1.4-49.2,24.1-49.2,51.9c0,28.7,23.3,52,52,52c6.3,0,12.3-1.1,17.8-3.1&#10;&#9;&#9;&#9;c63.6,201.6,252,347.8,474.6,347.8c232.1,0,427.1-158.9,482.1-373.9c6,4.4,13.4,7,21.4,7c19.9,0,36.1-16.1,36.1-36.1&#10;&#9;&#9;&#9;S1223.4,758.6,1203.5,758.6z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(236, 237, 238);"/><path d="M 1302.899952 521.799988 A 31.700001 31.700001 0 0 1 1271.199951 553.499989 A 31.700001 31.700001 0 0 1 1239.49995 521.799988 A 31.700001 31.700001 0 0 1 1271.199951 490.099987 A 31.700001 31.700001 0 0 1 1302.899952 521.799988 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(60, 219, 192);"/><path d="M 1350.800024 596.5 A 23.9 23.9 0 0 1 1326.900024 620.4 A 23.9 23.9 0 0 1 1303.000025 596.5 A 23.9 23.9 0 0 1 1326.900024 572.6 A 23.9 23.9 0 0 1 1350.800024 596.5 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, -142.57423184734375, 403.28139865391523)" style="fill: rgb(60, 219, 192);"/><path d="M 1274.00005 603.200012 A 17.200001 17.200001 0 0 1 1256.800049 620.400013 A 17.200001 17.200001 0 0 1 1239.600048 603.200012 A 17.200001 17.200001 0 0 1 1256.800049 586.000011 A 17.200001 17.200001 0 0 1 1274.00005 603.200012 Z" fill="#F1CD8C" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path d="M 499 735.5 H 534.400002 V 855.699997 H 499 V 735.5 Z" fill="#F7A460" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 534.400024 735.5 H 865.600037 V 855.699997 H 534.400024 V 735.5 Z" fill="#FAB57E" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 865.599976 735.5 H 900.999977 V 855.699997 H 865.599976 V 735.5 Z" fill="#F7A460" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAB57E" d="M447.4,866c-23.1,0-41.9,18.8-41.9,41.9c0,23.1,18.8,42,41.9,42h11.7l24.8-53.7V866H447.4z M447.4,927.9&#10;&#9;&#9;&#9;c-11,0-19.9-8.9-19.9-20c0-11,8.9-19.9,19.9-19.9H462v39.9H447.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 484 949.9000244140625 L 484 896.2000122070312 L 459.20001220703125 949.9000244140625 Z" fill="#F47E46" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#E05E51" d="M447.4,888c-11,0-19.9,8.9-19.9,19.9c0,11,8.9,20,19.9,20H462V888H447.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 916 949.9000244140625 L 940.7999877929688 949.9000244140625 L 916 896.2000122070312 Z" fill="#F47E46" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAB57E" d="M994.5,907.9c0-23.1-18.8-41.9-41.9-41.9H916v30.2l24.8,53.7h11.7C975.7,949.9,994.5,931,994.5,907.9z&#10;&#9;&#9;&#9; M938,888h14.5c11,0,19.9,8.9,19.9,19.9c0,11-8.9,20-19.9,20H938V888z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#E05E51" d="M972.5,907.9c0-11-8.9-19.9-19.9-19.9H938v39.9h14.5C963.6,927.9,972.5,918.9,972.5,907.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAB57E" d="M865.6,986.1c-13.3,5.1-28.5,8.5-45.3,8.5C714,994.6,710,892.9,710,884.4s-3-12-10-12s-10,3.5-10,12&#10;&#9;&#9;&#9;s-4,110.3-110.3,110.3c-16.8,0-32-3.4-45.3-8.5v40.3c0,29.7,9.5,57.2,25.6,79.6c36.2,35.2,85.6,56.9,140,56.9s103.7-21.7,140-56.9&#10;&#9;&#9;&#9;c16.1-22.4,25.6-49.9,25.6-79.6V986.1z M675.4,969.9c13.6-13.6,35.7-13.6,49.3,0c2.9,2.9,2.9,7.7,0,10.6c-1.5,1.5-3.4,2.2-5.3,2.2&#10;&#9;&#9;&#9;s-3.8-0.7-5.3-2.2c-7.7-7.7-20.3-7.7-28,0c-2.9,2.9-7.7,2.9-10.6,0C672.4,977.6,672.4,972.8,675.4,969.9z M802.4,1020.3&#10;&#9;&#9;&#9;c-27.4,27.4-63.7,42.4-102.4,42.4s-75-15.1-102.4-42.4c-2.9-2.9-2.9-7.7,0-10.6c2.9-2.9,7.7-2.9,10.6,0c24.5,24.5,57.1,38,91.8,38&#10;&#9;&#9;&#9;s67.3-13.5,91.8-38c2.9-2.9,7.7-2.9,10.6,0C805.3,1012.6,805.3,1017.4,802.4,1020.3z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#F7A460" d="M499,855.7v2.8v98.9v4.6c0,56.5,23.4,107.6,61,144.1c-16.1-22.4-25.6-49.9-25.6-79.6v-40.3&#10;&#9;&#9;&#9;c13.3,5.1,28.5,8.5,45.3,8.5C686,994.6,690,892.9,690,884.4s3-12,10-12s10,3.5,10,12s4,110.3,110.3,110.3c16.8,0,32-3.4,45.3-8.5&#10;&#9;&#9;&#9;v40.3c0,29.7-9.5,57.2-25.6,79.6c37.6-36.6,61-87.7,61-144.1v-4.6v-98.9v-2.8H499z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 469.5 735.5 H 484 V 850.900002 H 469.5 V 735.5 Z" fill="#D69729" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 454.899994 735.5 H 469.399994 V 850.900002 H 454.899994 V 735.5 Z" fill="#FAD704" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 916 735.5 H 930.5 V 850.900002 H 916 V 735.5 Z" fill="#D69729" transform="matrix(1, 0, 0, 1, 0, 0)"/><path d="M 930.5 735.5 H 945 V 850.900002 H 930.5 V 735.5 Z" fill="#FAD704" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAB57E" d="M631,1221.4v4.5c0,38,31,69,69,69s69-31,69-69v-4.5c-21.5,7.9-44.8,12.2-69,12.2S652.5,1229.3,631,1221.4z&#10;&#9;&#9;&#9;" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#F47E46" d="M700,1177.9c-23.8,0-47.1-3.8-69-11.2v54.7c21.5,7.9,44.8,12.2,69,12.2s47.5-4.3,69-12.2v-54.7&#10;&#9;&#9;&#9;C747.1,1174.1,723.8,1177.9,700,1177.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M960,851.5l0-123.5c0-2-0.8-3.9-2.2-5.3c-1.4-1.4-3.3-2.2-5.3-2.2h-44h-417h-44c-4.1,0-7.5,3.4-7.5,7.5&#10;&#9;&#9;v123.5c-27.9,3.7-49.4,27.6-49.4,56.4c0,31.4,25.5,56.9,56.9,56.9H484c0.8,56.6,23.1,109.7,63.2,149.8&#10;&#9;&#9;c20.1,20.1,43.4,35.7,68.7,46.4v64.8c0,46.3,37.7,84,84,84c46.3,0,84-37.7,84-84V1161c25.4-10.7,48.7-26.3,68.7-46.4&#10;&#9;&#9;c40.1-40.1,62.5-93.2,63.2-149.8h36.6c31.4,0,56.9-25.5,56.9-57C1009.5,879,987.9,855.1,960,851.5z M952.6,949.9H916V866h36.5h0&#10;&#9;&#9;c23.1,0,41.9,18.8,41.9,42C994.5,931,975.7,949.9,952.6,949.9z M631,1166.7c21.9,7.4,45.2,11.2,69,11.2c23.8,0,47.1-3.8,69-11.2&#10;&#9;&#9;v59.2c0,38-31,69-69,69s-69-31-69-69V1166.7z M700,1162.9c-110.8,0-201-90.2-201-201v-4.6v-98.9V735.5h402v122.9v98.9v4.6&#10;&#9;&#9;C901,1072.7,810.8,1162.9,700,1162.9z M945,851h-29V735.5h29L945,851z M454.9,735.5h29V851h-29V735.5z M447.4,866H484v83.9h-36.5&#10;&#9;&#9;c-23.1,0-41.9-18.8-41.9-42C405.5,884.8,424.3,866,447.4,866z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M686,980.5c7.7-7.7,20.3-7.7,28,0c1.5,1.5,3.4,2.2,5.3,2.2s3.8-0.7,5.3-2.2c2.9-2.9,2.9-7.7,0-10.6&#10;&#9;&#9;c-13.6-13.6-35.7-13.6-49.3,0c-2.9,2.9-2.9,7.7,0,10.6C678.3,983.4,683,983.4,686,980.5z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M802.4,1020.3c2.9-2.9,2.9-7.7,0-10.6c-2.9-2.9-7.7-2.9-10.6,0c-24.5,24.5-57.1,38-91.8,38&#10;&#9;&#9;s-67.3-13.5-91.8-38c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6c27.4,27.4,63.7,42.4,102.4,42.4S775,1047.6,802.4,1020.3z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M818.5,770.2c-49.2,0-90.5,34.2-101.4,80.1c-4.8-3.5-10.7-5.5-17.1-5.5c-6.4,0-12.3,2.1-17.1,5.5&#10;&#9;&#9;c-10.9-45.9-52.2-80.1-101.4-80.1c-57.5,0-104.2,46.8-104.2,104.2S524,978.7,581.5,978.7s104.2-46.8,104.2-104.2c0-0.3,0-0.5,0-0.8&#10;&#9;&#9;c0.3-7.7,6.6-13.8,14.3-13.8s14,6.2,14.3,13.8c0,0.3,0,0.5,0,0.8c0,57.5,46.8,104.2,104.2,104.2s104.2-46.8,104.2-104.2&#10;&#9;&#9;S876,770.2,818.5,770.2z M581.5,963.7c-49.2,0-89.2-40-89.2-89.2s40-89.2,89.2-89.2c48.8,0,88.6,39.4,89.2,88.1c0,0.3,0,0.5,0,0.8&#10;&#9;&#9;c0,0.2,0,0.4,0,0.6C670.6,923.8,630.6,963.7,581.5,963.7z M818.5,963.7c-49.1,0-89.1-39.9-89.2-89c0-0.2,0-0.4,0-0.6&#10;&#9;&#9;c0-0.3,0-0.5,0-0.8c0.6-48.7,40.4-88.1,89.2-88.1c49.2,0,89.2,40,89.2,89.2S867.7,963.7,818.5,963.7z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M891.2,676.4C891.1,676.4,891.1,676.3,891.2,676.4c10.9-18.8,8.8-45.1-6-64c-12.6-16.2-33.3-26.8-57.2-29.6&#10;&#9;&#9;c-6.5-15.7-21.8-29.3-42.9-37.9c-28.4-11.6-60.6-11.2-85.1,0.9c-24.5-12.1-56.7-12.6-85.1-0.9c-21,8.6-36.4,22.3-42.9,37.9&#10;&#9;&#9;c-23.9,2.8-44.6,13.4-57.2,29.6c-14.7,18.9-16.8,45.2-5.9,63.9c0,0-0.1,0.1-0.1,0.1C493,690.3,484,709.1,484,728&#10;&#9;&#9;c0,4.1,3.4,7.5,7.5,7.5h141.2c0,0,0,0,0,0c0,0,0,0,0,0H700h67.3c0,0,0,0,0,0c0,0,0,0,0,0h141.2c4.1,0,7.5-3.4,7.5-7.5&#10;&#9;&#9;C916,709.1,907,690.3,891.2,676.4z M692.5,666.5c-11.4-12.5-25.6-23.6-40.3-31.4c-19.7-10.5-47.5-16.3-74.2-15.6&#10;&#9;&#9;c-4.1,0.1-7.4,3.5-7.3,7.7c0.1,4.1,3.5,7.4,7.7,7.3c24.3-0.6,49.3,4.6,66.8,13.9c18.7,9.9,36.2,25.6,47.3,42.3v29.9h-55.9&#10;&#9;&#9;c-11.3-14.2-43.9-33.6-69.7-28.5c-4.1,0.8-6.7,4.7-5.9,8.8c0.8,4.1,4.7,6.7,8.8,5.9c14.8-2.9,32.8,5.5,44.5,13.8H499.6&#10;&#9;&#9;c2-12,8.7-23.7,19.1-32.8c16.4-14.4,39.3-20.5,64.6-17.2c4.1,0.5,7.9-2.4,8.4-6.5s-2.4-7.9-6.5-8.4c-23.9-3.1-46.1,1.1-64.1,11.9&#10;&#9;&#9;c-7-13.4-5-32.3,5.5-45.8c10.9-14,29.6-22.8,51.4-24.3c20.6-1.4,41.6,3.5,61.3,9c4,1.1,8.1-1.2,9.2-5.2c1.1-4-1.2-8.1-5.2-9.2&#10;&#9;&#9;c-17.2-4.8-35.4-9.2-54-9.7c6.3-9.3,17.3-17.7,31.2-23.4c24.2-9.9,51.3-9.8,71.9,0.1V666.5z M785.7,720.5&#10;&#9;&#9;c11.7-8.3,29.7-16.7,44.5-13.8c4.1,0.8,8-1.8,8.8-5.9c0.8-4.1-1.8-8-5.9-8.8c-25.8-5.1-58.5,14.3-69.7,28.5h-55.9v-29.9&#10;&#9;&#9;c11.1-16.7,28.6-32.4,47.3-42.3c17.5-9.3,42.5-14.5,66.8-13.9c0.1,0,0.1,0,0.2,0c4.1,0,7.4-3.2,7.5-7.3c0.1-4.1-3.2-7.6-7.3-7.7&#10;&#9;&#9;c-26.7-0.7-54.5,5.2-74.2,15.6c-14.8,7.8-28.9,18.9-40.3,31.4V558.9c20.6-9.9,47.7-10,71.9-0.1c13.9,5.7,24.9,14.1,31.2,23.4&#10;&#9;&#9;c-18.6,0.6-36.8,4.9-54,9.7c-4,1.1-6.3,5.3-5.2,9.2c1.1,4,5.3,6.3,9.2,5.2c19.7-5.5,40.7-10.4,61.3-9c21.8,1.5,40.5,10.3,51.4,24.3&#10;&#9;&#9;c10.5,13.4,12.5,32.4,5.5,45.8c-18-10.8-40.3-14.9-64.1-11.9c-4.1,0.5-7,4.3-6.5,8.4c0.5,4.1,4.3,7,8.4,6.5&#10;&#9;&#9;c25.3-3.3,48.3,2.8,64.6,17.2c10.4,9.1,17.1,20.8,19.1,32.8H785.7z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#F7A460" d="M700,1115.4c19.7,0,35.8-16,35.8-35.8h-71.5C664.2,1099.3,680.3,1115.4,700,1115.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#DDE7F3" d="M610.1,789.9L497,903.1c6,17.8,17.5,33,32.5,43.8l124.5-124.5C643.2,807.4,627.9,795.9,610.1,789.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#6EC2E8" d="M581.5,785.2c-49.2,0-89.2,40-89.2,89.2c0,10,1.7,19.6,4.7,28.6l113.1-113.1&#10;&#9;&#9;&#9;C601.1,786.9,591.5,785.2,581.5,785.2z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#6EC2E8" d="M670.7,874.1c0-0.3,0-0.5,0-0.8c-0.2-19-6.4-36.6-16.8-50.9L529.4,946.9c14.7,10.6,32.6,16.8,52.1,16.8&#10;&#9;&#9;&#9;c49.1,0,89.1-39.9,89.2-89C670.7,874.5,670.7,874.3,670.7,874.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#DDE7F3" d="M848.6,790.4L734.5,904.5c6.3,17.6,18,32.7,33.1,43.2l124.2-124.2C881.2,808.5,866.2,796.8,848.6,790.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#6EC2E8" d="M818.5,785.2c-48.8,0-88.6,39.4-89.2,88.1c0,0.3,0,0.5,0,0.8c0,0.2,0,0.4,0,0.6c0,10.5,1.9,20.5,5.2,29.8&#10;&#9;&#9;&#9;l114.1-114.1C839.2,787.1,829.1,785.2,818.5,785.2z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#6EC2E8" d="M767.6,947.7c14.4,10.1,32,16,50.9,16c49.2,0,89.2-40,89.2-89.2c0-18.9-5.9-36.5-16-50.9L767.6,947.7z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M581.5,914.9c-12.4,0-24.8-4.7-34.2-14.2c-2.9-2.9-2.9-7.7,0-10.6c2.9-2.9,7.7-2.9,10.6,0&#10;&#9;&#9;&#9;c13,13,34.2,13,47.3,0c2.9-2.9,7.7-2.9,10.6,0c2.9,2.9,2.9,7.7,0,10.6C606.3,910.2,593.9,914.9,581.5,914.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M818.5,914.9c12.4,0,24.8-4.7,34.2-14.2c2.9-2.9,2.9-7.7,0-10.6c-2.9-2.9-7.7-2.9-10.6,0&#10;&#9;&#9;&#9;c-13,13-34.2,13-47.3,0c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C793.7,910.2,806.1,914.9,818.5,914.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAC2C2" d="M544.4,673.4c-9.6,3-18.3,7.8-25.6,14.2c-10.4,9.1-17.1,20.8-19.1,32.8h5.2&#10;&#9;&#9;&#9;C511,700.4,525.7,683.1,544.4,673.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M585.9,692.1c21,3.7,42.1,17.6,50.7,28.4h55.9v-21.9C660.3,680.9,620.1,678.5,585.9,692.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M540.8,685.5c4.8-6.6,11.4-11.9,18.9-15.3c-5.3,0.6-10.4,1.7-15.3,3.2c-18.7,9.6-33.3,27-39.5,47.1h27&#10;&#9;&#9;&#9;C530.3,708.3,533.5,695.5,540.8,685.5z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#EF6B60" d="M645.2,648.3c-17.6-9.3-42.5-14.5-66.8-13.9c-4.1,0.1-7.6-3.2-7.7-7.3c-0.1-4.1,3.2-7.6,7.3-7.7&#10;&#9;&#9;&#9;c13.9-0.3,28,1.1,41.2,4c24.3-5.2,50.1-3.4,73.3,5.5v-63.7c-30.2-11.2-66.6-3.9-90.2,18c14.1,1.7,27.9,5.1,41.1,8.8&#10;&#9;&#9;&#9;c4,1.1,6.3,5.3,5.2,9.2c-1.1,4-5.3,6.3-9.2,5.2c-19.7-5.5-40.7-10.4-61.3-9c-0.5,0-1,0.1-1.4,0.1c-2.3,1-4.5,2.1-6.7,3.3&#10;&#9;&#9;&#9;c-11,6.2-20.4,16-23.9,28.2c-2.7,9.2-1.6,19.6,3.2,27.8c11.4-2.4,23.6-2.8,36.2-1.1c4.1,0.5,7,4.3,6.5,8.4s-4.3,7-8.4,6.5&#10;&#9;&#9;&#9;c-8.2-1.1-16.1-1.1-23.7-0.3c-7.4,3.5-14,8.7-18.9,15.3c-7.3,10-10.5,22.7-9,35h16.3c15.4-7.9,33.1-11,50.3-9&#10;&#9;&#9;&#9;c-9.3-4.1-19.5-6.5-28.6-4.8c-4.1,0.8-8-1.8-8.8-5.9c-0.8-4.1,1.8-8,5.9-8.8c6.1-1.2,12.6-1,19.1,0.1&#10;&#9;&#9;&#9;c34.1-13.6,74.3-11.2,106.6,6.5v-7.9C681.4,673.9,663.9,658.2,645.2,648.3z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M548.1,720.5h66.2c-4.6-3.2-10.1-6.5-16-9C581.2,709.5,563.4,712.6,548.1,720.5z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M619.2,623.4c12.2,2.7,23.5,6.6,33,11.7c14.8,7.8,28.9,18.9,40.3,31.4v-37.6&#10;&#9;&#9;&#9;C669.3,620,643.5,618.2,619.2,623.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAC2C2" d="M692.5,565.1v-6.2c-20.6-9.9-47.7-10-71.9-0.1c-13.9,5.7-24.9,14.1-31.2,23.4c4.3,0.1,8.6,0.5,12.9,1&#10;&#9;&#9;&#9;C625.9,561.2,662.3,553.9,692.5,565.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAC2C2" d="M531.9,623c4.1-7.5,10.1-13.9,17.3-18.6c-9.2,4.2-16.9,10-22.6,17.2c-10.5,13.4-12.5,32.4-5.5,45.8&#10;&#9;&#9;&#9;c2.3-1.4,4.7-2.6,7.1-3.8C524.1,650.4,525.3,635.3,531.9,623z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M545.9,628.9c3.6-12.1,12.9-22,23.9-28.2c2.2-1.2,4.4-2.3,6.7-3.3c-9.9,0.8-19.2,3.2-27.4,6.9&#10;&#9;&#9;&#9;c-7.2,4.7-13.2,11.1-17.3,18.6c-6.6,12.3-7.9,27.3-3.6,40.6c6.5-3.1,13.5-5.4,20.8-6.9C544.3,648.6,543.2,638.1,545.9,628.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M707.5,628.9v37.6c11.4-12.5,25.6-23.6,40.3-31.4c9.5-5,20.8-9,33-11.7C756.6,618.2,730.7,620,707.5,628.9&#10;&#9;&#9;&#9;z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M707.5,698.6v21.9h55.9c8.6-10.8,29.7-24.7,50.7-28.4C779.9,678.5,739.7,680.9,707.5,698.6z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#EF6B60" d="M859.2,685.5c-4.8-6.6-11.4-11.9-18.9-15.3c-7.6-0.9-15.5-0.8-23.7,0.3c-4.1,0.5-7.9-2.4-8.4-6.5&#10;&#9;&#9;&#9;c-0.5-4.1,2.4-7.9,6.5-8.4c12.7-1.6,24.9-1.2,36.2,1.1c4.8-8.2,5.9-18.6,3.2-27.8c-3.6-12.1-12.9-22-23.9-28.2&#10;&#9;&#9;&#9;c-2.2-1.2-4.4-2.3-6.7-3.3c-0.5,0-1-0.1-1.4-0.1c-20.6-1.4-41.6,3.5-61.3,9c-4,1.1-8.1-1.2-9.2-5.2c-1.1-4,1.2-8.1,5.2-9.2&#10;&#9;&#9;&#9;c13.2-3.7,27-7.1,41.1-8.8c-23.6-21.9-60-29.3-90.2-18v63.7c23.2-8.8,49.1-10.7,73.3-5.5c13.2-2.9,27.3-4.3,41.2-4&#10;&#9;&#9;&#9;c4.1,0.1,7.4,3.5,7.3,7.7c-0.1,4.1-3.4,7.3-7.5,7.3c-0.1,0-0.1,0-0.2,0c-24.3-0.6-49.3,4.6-66.8,13.9&#10;&#9;&#9;&#9;c-18.7,9.9-36.2,25.6-47.3,42.3v7.9c32.2-17.6,72.4-20,106.6-6.5c6.5-1.1,13-1.3,19.1-0.1c4.1,0.8,6.7,4.7,5.9,8.8&#10;&#9;&#9;&#9;c-0.8,4.1-4.7,6.7-8.8,5.9c-9-1.8-19.3,0.7-28.6,4.8c17.2-2,34.9,1.2,50.3,9h16.3C869.7,708.3,866.5,695.5,859.2,685.5z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M801.6,711.5c-5.9,2.6-11.4,5.8-16,9h66.2C836.6,712.6,818.8,709.5,801.6,711.5z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M855.7,673.4c-4.9-1.5-10-2.6-15.3-3.2c7.4,3.5,14,8.7,18.9,15.3c7.3,10,10.5,22.7,9,35h27&#10;&#9;&#9;&#9;C889,700.4,874.3,683.1,855.7,673.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M895.1,720.5h5.2c-2-12-8.7-23.7-19.1-32.8c-7.3-6.4-16-11.2-25.6-14.2C874.3,683.1,889,700.4,895.1,720.5&#10;&#9;&#9;&#9;z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M868.1,623c6.6,12.3,7.9,27.3,3.6,40.6c2.4,1.2,4.8,2.4,7.1,3.8c7-13.4,5-32.3-5.5-45.8&#10;&#9;&#9;&#9;c-5.6-7.2-13.4-13.1-22.6-17.2C857.9,609.1,864,615.5,868.1,623z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#BF3631" d="M854.1,628.9c2.7,9.2,1.6,19.6-3.2,27.8c7.3,1.5,14.3,3.8,20.8,6.9c4.2-13.3,3-28.3-3.6-40.6&#10;&#9;&#9;&#9;c-4.1-7.5-10.1-13.9-17.3-18.6c-8.1-3.7-17.4-6.1-27.4-6.9c2.3,1,4.5,2.1,6.7,3.3C841.2,606.9,850.5,616.8,854.1,628.9z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FAC2C2" d="M797.7,583.2c4.3-0.5,8.6-0.8,12.9-1c-6.3-9.3-17.3-17.7-31.2-23.4c-24.2-9.9-51.3-9.8-71.9,0.1v6.2&#10;&#9;&#9;&#9;C737.7,553.9,774.1,561.2,797.7,583.2z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M406.4,498.6c-1.3-2.2-3.7-3.7-6.3-3.7c-2.6-0.1-5,1.2-6.5,3.3l-15.6,23.5l-84.5-51.5&#10;&#9;&#9;&#9;c-2.9-1.8-6.6-1.4-9.1,1c-2.5,2.4-3,6.1-1.4,9.1L355,609c1.3,2.3,3.7,3.8,6.4,3.8c2.7,0.1,5.2-1.3,6.5-3.6l16.5-27l83.3,50.5&#10;&#9;&#9;&#9;c1.2,0.7,2.5,1.1,3.9,1.1c1.9,0,3.8-0.7,5.2-2.1c2.4-2.4,3-6.1,1.2-9.1L406.4,498.6z M385.8,565.6c-1.2-0.7-2.6-1.1-3.9-1.1&#10;&#9;&#9;&#9;c-2.5,0-5,1.3-6.4,3.6l-13.7,22.4l-51.7-92.7l66.3,40.4c3.4,2.1,7.9,1.1,10.1-2.2l12.9-19.4l51,88.2L385.8,565.6z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M439.8,671.2l-90.9-28.9c-2.5-0.8-5.2-0.2-7.1,1.4c-2,1.7-2.9,4.3-2.5,6.8l2.5,16.2l-62.4,12.1&#10;&#9;&#9;&#9;c-3.3,0.6-5.8,3.5-6.1,6.9c-0.2,3.4,1.9,6.5,5.1,7.6l93.2,31.2c0.8,0.3,1.6,0.4,2.4,0.4c0,0,0,0,0.1,0c4.1,0,7.5-3.4,7.5-7.5&#10;&#9;&#9;&#9;c0-0.7-0.1-1.3-0.3-2l-3.4-17.7l61.2-12c3.4-0.7,5.8-3.5,6-6.9S443.1,672.2,439.8,671.2z M367.5,684.4c-4.1,0.8-6.7,4.7-5.9,8.8&#10;&#9;&#9;&#9;l2.5,13l-54-18.1l41.4-8c4-0.8,6.6-4.5,6-8.5l-1.7-11.4l51.5,16.4L367.5,684.4z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M530.9,450.4c-0.3-2.6-2-4.8-4.3-5.9c-2.4-1.1-5.1-0.9-7.3,0.6l-13.6,9.1l-37.3-51.4&#10;&#9;&#9;&#9;c-2-2.8-5.6-3.8-8.8-2.6c-3.2,1.2-5.1,4.4-4.7,7.8l11,97.7c0.3,2.6,2,4.9,4.4,6c2.4,1.1,5.3,0.8,7.4-0.8l15.1-10.9l36.8,50.4&#10;&#9;&#9;&#9;c1.4,2,3.7,3.1,6.1,3.1c0.9,0,1.9-0.2,2.8-0.5c3.2-1.3,5.1-4.5,4.7-7.9L530.9,450.4z M500.5,485.1c-1.5-2-3.8-3.1-6.1-3.1&#10;&#9;&#9;&#9;c-1.5,0-3.1,0.5-4.4,1.4l-10.7,7.8l-6.4-56.6l24.8,34.2c2.4,3.3,6.9,4.1,10.2,1.8l9.6-6.4l6.9,53.7L500.5,485.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M1115.5,471.1c-2.5-2.4-6.2-2.8-9.1-1l-84.5,51.5l-15.6-23.5c-1.4-2.2-3.9-3.4-6.5-3.3&#10;&#9;&#9;&#9;c-2.6,0.1-5,1.5-6.3,3.7l-71.6,124c-1.7,3-1.2,6.7,1.2,9.1c1.4,1.4,3.3,2.1,5.2,2.1c1.3,0,2.7-0.4,3.9-1.1l83.3-50.5l16.5,27&#10;&#9;&#9;&#9;c1.4,2.3,3.9,3.6,6.5,3.6c2.7-0.1,5.1-1.5,6.4-3.8l71.8-128.8C1118.5,477.2,1118,473.5,1115.5,471.1z M1024.5,568.1&#10;&#9;&#9;&#9;c-2.2-3.5-6.8-4.6-10.3-2.5l-64.7,39.2l51-88.2l12.9,19.4c2.2,3.4,6.7,4.3,10.1,2.2l66.3-40.4l-51.7,92.7L1024.5,568.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#253338" d="M929.7,511.7c2.4-1.1,4.1-3.4,4.4-6l11-97.7c0.4-3.4-1.6-6.6-4.7-7.8c-3.2-1.2-6.8-0.2-8.8,2.6l-37.3,51.4&#10;&#9;&#9;&#9;l-13.6-9.1c-2.2-1.4-4.9-1.7-7.3-0.6c-2.4,1.1-4,3.3-4.3,5.9L856.9,545c-0.4,3.4,1.5,6.7,4.7,7.9c0.9,0.4,1.8,0.5,2.8,0.5&#10;&#9;&#9;&#9;c2.3,0,4.6-1.1,6.1-3.1l36.8-50.4l15.1,10.9C924.4,512.4,927.2,512.7,929.7,511.7z M899.5,485.1l-23.9,32.8l6.9-53.7l9.6,6.4&#10;&#9;&#9;&#9;c3.4,2.2,7.9,1.4,10.2-1.8l24.8-34.2l-6.4,56.6l-10.7-7.8C906.6,481,901.9,481.7,899.5,485.1z" transform="matrix(1, 0, 0, 1, 0, 0)"/><path fill="#FDE080" d="M370.6,558.1l-7.1,12.9l-53.4-73.2l51.7,92.7l13.7-22.4c1.4-2.3,3.9-3.6,6.4-3.6c1.3,0,2.7,0.4,3.9,1.1&#10;&#9;&#9;&#9;l64.7,39.2l-63.1-50C382,550.4,373.9,552,370.6,558.1z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path fill="#FEC117" d="M386.6,536c-2.2,3.3-6.7,4.3-10.1,2.2l-66.3-40.4l53.4,73.2l7.1-12.9c3.4-6.1,11.4-7.7,16.8-3.4l63.1,50&#10;&#9;&#9;&#9;l-51-88.2L386.6,536z" transform="matrix(1, 0, 0, 1, -4.160239086559159e-7, 3.0216750701583805e-7)" style="fill: rgb(60, 219, 192);"/><path fill="#FEC117" d="M357.6,671.6c0.6,4-2,7.7-6,8.5l-41.4,8l48.6,11.9l-1.7-10.2c-0.8-4.6,2.5-8.8,7.1-9.2l43.2-3.9&#10;&#9;&#9;&#9;l-51.5-16.4L357.6,671.6z" transform="matrix(1, 0, 0, 1, -4.160239086559159e-7, 3.0216750701583805e-7)" style="fill: rgb(60, 219, 192);"/><path fill="#FDE080" d="M357.1,689.8l1.7,10.2l-48.6-11.9l54,18.1l-2.5-13c-0.8-4.1,1.9-8,5.9-8.8l39.9-7.8l-43.2,3.9&#10;&#9;&#9;&#9;C359.6,681,356.3,685.2,357.1,689.8z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path fill="#FDE080" d="M492.4,477.2l-9.9,6.3l-9.5-48.9l6.4,56.6l10.7-7.8c1.3-1,2.9-1.4,4.4-1.4c2.3,0,4.6,1.1,6.1,3.1&#10;&#9;&#9;&#9;l23.9,32.8l-21.6-38.1C500.7,476.1,496,474.9,492.4,477.2z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path fill="#FEC117" d="M508,470.6c-3.4,2.2-7.9,1.4-10.2-1.8L473,434.6l9.5,48.9l9.9-6.3c3.6-2.3,8.3-1.1,10.4,2.6l21.6,38.1&#10;&#9;&#9;&#9;l-6.9-53.7L508,470.6z" transform="matrix(1, 0, 0, 1, -4.160239086559159e-7, 3.0216750701583805e-7)" style="fill: rgb(60, 219, 192);"/><path fill="#FDE080" d="M908.5,478.3c-3.9-2.7-9.2-1.5-11.6,2.6l-21.4,37.1l23.9-32.8c2.4-3.3,7.1-4.1,10.5-1.7l10.7,7.8l6.4-56.6&#10;&#9;&#9;&#9;l-11,48.9L908.5,478.3z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path fill="#FEC117" d="M892,470.6l-9.6-6.4l-6.9,53.7l21.4-37.1c2.4-4.1,7.7-5.3,11.6-2.6l7.5,5.2l11-48.9l-24.8,34.2&#10;&#9;&#9;&#9;C899.9,472.1,895.4,472.9,892,470.6z" transform="matrix(1, 0, 0, 1, -4.160239086559159e-7, -2.036773379473118)" style="fill: rgb(60, 219, 192);"/><path fill="#FDE080" d="M1030.7,560.4c-3.5-6.7-12.2-8.6-18.2-4l-63,48.3l64.7-39.2c3.5-2.1,8.1-1,10.3,2.5l13.7,22.4l51.7-92.7&#10;&#9;&#9;&#9;l-52.2,75.9L1030.7,560.4z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(0, 89, 79);"/><path fill="#FEC117" d="M1013.4,536l-12.9-19.4l-51,88.2l63-48.3c6-4.6,14.7-2.7,18.2,4l7,13.2l52.2-75.9l-66.3,40.4&#10;&#9;&#9;&#9;C1020.2,540.3,1015.7,539.3,1013.4,536z" transform="matrix(1, 0, 0, 1, -4.160239086559159e-7, 3.0216750701583805e-7)" style="fill: rgb(60, 219, 192);"/>
                     </svg>
@@ -214,7 +284,7 @@
             </div>
             <!-- Numbers -->
             <div class="mt-5 col-12 col-md-7 col-lg-6">
-                <div class="mx-auto" style="max-width: 400px;">
+                <div class="mx-auto me-md-auto ms-md-5" style="max-width: 500px;">
                     <!-- 1 -->
                     <div class="d-flex flex-row align-items-center">
                         <div class="mt-0 mt-md-2"><span class="display-1 text-guvery ms-2">1</span></div>
@@ -255,41 +325,87 @@
     <hr class="hr-gradient my-6">
     <div class="container-fluid">
         <div class="mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6">
-            <h4 class="text-center text-primary fw-bold ff-gotham">Tiempos de entrega promedio</h4>
-            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">desde que aceptas una oferta hasta que tu pedido está en Lima.</h6>
-            <div class="row">
+            <h4 class="text-center text-primary fw-bold ff-gotham">Tiempos de entrega promedio<sup class="text-indigo opacity-75">*</sup></h4>
+            <div class="row mt-3">
                 <div class="col-12 col-sm-6 ps-sm-0 mt-4">
-                    <div class="card border border-4 rounded-4">
+                    <div class="card border border-4 rounded-4 mx-auto ms-sm-auto me-sm-0 position-relative" style="max-width: 400px;">
                         <div class="card-body">
-                            <h4 class="card-title text-dark opacity-75 text-center display-5">⚡️</h4>
-                            <h4 class="card-title text-primary text-center display-6">3 - 7 días<sup class="text-indigo opacity-50">*</sup></h4>
+                            <h4 class="mt-4 card-title text-primary text-center display-6">3 - 7 días</h4>
                             <h6 class="card-title text-black fw-bold text-center h6">Se puede lograr cuando:</h6>
                             <ul class="list-group list-group-flush opacity-75 small">
-                                <li class="list-group-item">La tienda es conocida y fácil de comprar.</li>
+                                <li class="list-group-item">La tienda es conocida / fácil de comprar.</li>
                                 <li class="list-group-item">Tiene envío rápido / ofrece pick-up.</li>
                                 <li class="list-group-item">La comisión al viajero es atractiva.</li>
                                 <li class="list-group-item">El producto es pequeño / ligero.</li>
                             </ul>
                         </div>
+                        <span class="position-absolute top-0 start-50 translate-middle p-2 bg-light border border-4 rounded-circle">
+                            <p class="m-0 h2 text-center" style="width: 30px; height: 30px;">⚡️</p>
+                        </span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 pe-sm-0 mt-4">
-                    <div class="card border border-4 rounded-4">
+                <div class="col-12 col-sm-6 pe-sm-0 mt-5 mt-sm-4">
+                    <div class="card border border-4 rounded-4 mx-auto ms-sm-0 me-sm-auto position-relative" style="max-width: 400px;">
                         <div class="card-body">
-                            <h4 class="card-title text-dark opacity-75 text-center display-5">⏱</h4>
-                            <h4 class="card-title text-primary text-center display-6">7 - 15 días<sup class="text-indigo opacity-50">*</sup></h4>
+                            <h4 class="mt-4 card-title text-primary text-center display-6">7 - 15 días</h4>
                             <h6 class="card-title text-black fw-bold text-center h6">Generalmente cuando:</h6>
                             <ul class="list-group list-group-flush opacity-75 small">
-                                <li class="list-group-item">La tienda es poco conocida / difícil para comprar.</li>
-                                <li class="list-group-item">No hay pick-up y el envío es regular.</li>
+                                <li class="list-group-item">La tienda no es conocida / difícil de comprar.</li>
+                                <li class="list-group-item">Tiene envío regular / No hay pick-up.</li>
                                 <li class="list-group-item">La comisión al viajero es baja.</li>
                                 <li class="list-group-item">El producto es grande / pesado.</li>
                             </ul>
                         </div>
+                        <span class="position-absolute top-0 start-50 translate-middle p-2 bg-light border border-4 rounded-circle">
+                            <p class="m-0 h2 text-center" style="width: 30px; height: 30px;">⏱</p>
+                        </span>
                     </div>
                 </div>
             </div>
-            <h6 class="mt-4 text-center text-indigo opacity-75 ff-gotham">* Revisa la fecha de entrega exacta antes de aceptar una oferta.</h6>
+            <h6 class="mt-4 text-center text-indigo opacity-50 small">
+                * Desde que aceptas una oferta hasta que tu pedido llega a Lima.<br>
+                Revisa la <span class="fw-bolder">fecha de entrega exacta</span> antes de aceptar una oferta.
+            </h6>
+            <!-- Formas de entrega -->
+            <h4 class="mt-6 text-center text-primary fw-bold ff-gotham">Formas de entrega</h4>
+            <div class="row mt-3">
+                <div class="col-12 col-sm-6 ps-sm-0 mt-4">
+                    <div class="card border border-4 rounded-4 mx-auto ms-sm-auto me-sm-0 position-relative" style="max-width: 400px;">
+                        <div class="card-body">
+                            <h4 class="mt-4 card-title text-primary text-center">Recojo en Lima</h4>
+                            <h6 class="card-title text-black fw-bold text-center h6">sin costo</h6>
+                            <ul class="list-group list-group-flush opacity-75 small">
+                                <li class="list-group-item">Se coordina con el viajero vía chat.</li>
+                                <li class="list-group-item">Generalmente es en el domicilio del viajero.</li>
+                                <li class="list-group-item">El viajero indica los distritos donde entrega cuando hace la oferta.</li>
+                            </ul>
+                        </div>
+                        <span class="position-absolute top-0 start-50 translate-middle p-2 bg-light border border-4 rounded-circle">
+                            <p class="m-0 h2 text-center" style="width: 30px; height: 30px;">👥</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 pe-sm-0 mt-5 mt-sm-4">
+                    <div class="card border border-4 rounded-4 mx-auto ms-sm-0 me-sm-auto position-relative" style="max-width: 400px;">
+                        <div class="card-body">
+                            <h4 class="mt-4 card-title text-primary text-center">Envío Nacional<sup class="text-indigo opacity-75">*</sup></h4>
+                            <h6 class="card-title text-warning fw-bold text-center h6">costo adicional</h6>
+                            <ul class="list-group list-group-flush opacity-75 small">
+                                <li class="list-group-item">A todo el Perú vía MailBoxes > OLVA.</li>
+                                <li class="list-group-item">El viajero lleva el pedido a Mailboxes para su registro y empaque.</li>
+                                <li class="list-group-item">Una vez pagado, se despacha vía OLVA.</li>
+                            </ul>
+                        </div>
+                        <span class="position-absolute top-0 start-50 translate-middle p-2 bg-light border border-4 rounded-circle">
+                            <p class="m-0 h2 text-center" style="width: 30px; height: 30px;">🚚</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <h6 class="mt-4 text-center text-indigo opacity-50 small">
+                * Sólo hacemos envíos a traavés de la empresa MailBoxes ETC (aliada de OLVA).<br>
+                Generalmente todo el proceso tarda enre 3 - 6 días hasta llegar al domicilio.
+            </h6>
         </div>
     </div>
     <!-- Testimonios y prensa -->
@@ -297,8 +413,26 @@
     <div class="container-fluid">
         <!-- Testimonios -->
         <div class="mt-2 mx-2 mx-md-4 mx-lg-5 mx-xl-6">
-            <h4 class="text-center text-primary fw-bold ff-gotham">Comunidad y Prensa</h4>
-            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Cuando estas comprometido con tus usuarios, se nota ;)</h6>
+            <h2 id="comofunciona" class="text-center text-primary fw-bold ff-gotham display-4">Comunidad</h2>
+            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Últimas entregas</h6>
+            <div id="splideDeliveries" class="splide px-6 mt-4" aria-label="Ultimas entregas">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide__container text-center">
+                                <div class="card mx-auto mb-5" style="max-width: 180px;">
+                                    <div class="card-body">
+                                        <img src="https://storage.googleapis.com/guvery-cdn/public_images/pedidos/59615.jpeg" alt="" width="60px" class="img-fluid rounded-circle">
+                                        <h6 class="mt-4 small">Giovanni ✈️ Saul</h6>
+                                        <h6 class="mt-2 small fw-light">🇵🇪 <span class="fw-bold">16/sep</span><span class="text-muted"> por </span><span class="price-decimal fw-bold">8</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Testimonios</h6>
             <div id="splideTestimonials" class="splide px-6 my-4" aria-label="Testimonios">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -453,37 +587,123 @@
             </div>
         </div>
 
-        <div class="mx-auto d-flex flex-wrap gap-4 gap-lg-5 justify-content-around" style="max-width: 800px;">
+        <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Prensa</h6>
+        <div class="mt-3 mx-auto d-flex flex-wrap gap-4 gap-lg-5 justify-content-around" style="max-width: 800px;">
             <div class="align-self-center">
-                <img src="./images/logo_elcomercio.png" alt="El Comercio" style="max-width: 130px; filter: invert(1) opacity(0.6) drop-shadow(1px 2px 0.2rem #aaa);">
+                <a target="_blank" href="http://elcomercio.pe/tecnologia/actualidad/guvery-plataforma-comprar-traves-viajeros-video-421364">
+                    <img src="./images/logo_elcomercio.png" alt="El Comercio" class="hover-filter-none" style="max-width: 130px; filter: invert(1) opacity(0.6) drop-shadow(1px 2px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_gestion.png" alt="Gestión" style="max-width: 130px; filter: grayscale(1) opacity(0.7) drop-shadow(1px 2px 0.2rem #aaa);">
+                <a target="_blank" href="https://gestion.pe/tendencias/south-summit-alianza-del-pacifico-arranca-hoy-y-10-start-ups-peruanas-competencia-221771">
+                    <img src="./images/logo_gestion.png" alt="Gestión" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) opacity(0.7) drop-shadow(1px 2px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_peru21.png" alt="Peru 21" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.6) drop-shadow(1px 2px 0.2rem #aaa);">
+                <a target="_blank" href="https://peru21.pe/economia/black-friday-comprar-estados-unidos-traer-producto-peru-442229-noticia/">
+                    <img src="./images/logo_peru21.png" alt="Peru 21" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.6) drop-shadow(1px 2px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_indecopi.png" alt="Indecopi" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.8) drop-shadow(1px 2px 0.2rem #aaa);">
+                <a target="_blank" href="https://www.gob.pe/institucion/indecopi/noticias/602505-dia-mundial-de-la-propiedad-intelectual-el-indecopi-reconocio-15-casos-de-exito-de-jovenes-emprendedores-innovadores-y-creativos">
+                    <img src="./images/logo_indecopi.png" alt="Indecopi" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.8) drop-shadow(1px 2px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_sup.png" alt="Startup Perú" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(1) drop-shadow(1px 1px 0.2rem #aaa);">
+                <a target="_blank" href="https://revistaganamas.com.pe/conozca-a-los-116-emprendimientos-beneficiarios-de-la-5ta-generacion-de-startup-peru/">
+                    <img src="./images/logo_sup.png" alt="Startup Perú" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(1) drop-shadow(1px 1px 0.1rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_rpp.png" alt="RPP" style="max-width: 130px; filter: grayscale(1) opacity(1) drop-shadow(1px 1px 0.2rem #aaa);">
+                <a target="_blank" href="https://rpp.pe/innova/conoce-a-5-jovenes-emprendedores-peruanos-menores-de-30-anos-noticia-1201393">
+                    <img src="./images/logo_rpp.png" alt="RPP" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) opacity(1) drop-shadow(1px 1px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_andina.png" alt="Andina" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.8) drop-shadow(1px 1px 0.2rem #aaa);">
+                <a target="_blank" href="https://andina.pe/agencia/noticia-startup-peruana-disena-plataforma-para-compras-estados-unidos-713966.aspx">
+                    <img src="./images/logo_andina.png" alt="Andina" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) invert(1) opacity(0.8) drop-shadow(1px 1px 0.2rem #aaa);">
+                </a>
             </div>
             <div class="align-self-center">
-                <img src="./images/logo_pbo.png" alt="PBO" style="max-width: 130px; filter: grayscale(1) invert(0) opacity(0.5) drop-shadow(1px 1px 0.2rem #aaa);">
+                <a target="_blank" href="https://www.facebook.com/watch/?v=335442225070417">
+                    <img src="./images/logo_pbo.png" alt="PBO" class="hover-filter-none" style="max-width: 130px; filter: grayscale(1) invert(0) opacity(0.5) drop-shadow(1px 1px 0.2rem #aaa);">
+                </a>
             </div>
+        </div>
+    </div>
+    <!-- Guvery ONE -->
+    <hr class="hr-gradient my-6">
+    <div class="container-fluid">
+        <h2 id="precio" class="text-center text-primary fw-bold ff-gotham display-4">Guvery <img src="https://www.guvery.com/images/one/one_logo_sm.png" alt="Logo Guvery ONE" width="120"></h2>
+        <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Los productos más vendidos a 1 clic de distancia</h6>
+        <div id="splideOneCollections" class="splide px-6 my-4" aria-label="Guvery ONE">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <div class="card mx-auto mb-5 border-one">
+                                <div class="card-body">
+                                    <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/279_1.png" alt="iPhone 14 Pro" class="img-fluid">
+                                    <h5 class="ff-gotham one-collection">iPhone14Pro</h5>
+                                    <h6 class="text-muted">13 productos</h6>
+                                    <a href="#" class="my-2 btn btn-outline-one rounded-pill text-black">desde <span class="price-decimal fw-bold">1221</span></a>
+                                    <h6 class="text-muted small">Entrega desde 7 días en Lima</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <div class="card mx-auto mb-5 border-one">
+                                <div class="card-body">
+                                    <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/182.png" alt="Minoxidil" class="img-fluid">
+                                    <h5 class="ff-gotham one-collection">Minoxidil</h5>
+                                    <h6 class="text-muted">10 productos</h6>
+                                    <a href="#" class="my-2 btn btn-outline-one rounded-pill text-black">desde <span class="price-decimal fw-bold">44.87</span></a>
+                                    <h6 class="text-muted small">Entrega desde 15 días en Lima</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <div class="card mx-auto mb-5 border-one">
+                                <div class="card-body">
+                                    <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/278_1.png" alt="Macbook Air M2" class="img-fluid">
+                                    <h5 class="ff-gotham one-collection">Macbook</h5>
+                                    <h6 class="text-muted">16 productos</h6>
+                                    <a href="#" class="my-2 btn btn-outline-one rounded-pill text-black">desde <span class="price-decimal fw-bold">1264</span></a>
+                                    <h6 class="text-muted small">Entrega desde 15 días en Lima</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container text-center">
+                            <div class="card mx-auto mb-5 border-one">
+                                <div class="card-body">
+                                    <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/287_1.png" alt="Airpods Pro 2" class="img-fluid">
+                                    <h5 class="ff-gotham one-collection">Airpods</h5>
+                                    <h6 class="text-muted">5 productos</h6>
+                                    <a href="#" class="my-2 btn btn-outline-one rounded-pill text-black">desde <span class="price-decimal fw-bold">163.64</span></a>
+                                    <h6 class="text-muted small">Entrega desde 15 días en Lima</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-0 text-center">
+            <a href="#" class="btn btn-outline-one rounded-pill p-3 fw-bold shadow">Beneficios <img src="https://www.guvery.com/images/one/one_logo_sm.png" alt="Logo Guvery ONE" width="36" style="filter: brightness(0.7);"></a>
+            <a href="#" class="btn btn-outline-one rounded-pill p-3 fw-bold shadow">Catálogo <img src="https://www.guvery.com/images/one/one_logo_sm.png" alt="Logo Guvery ONE" width="36" style="filter: brightness(0.7);"></a>
+            <h6 class="mt-3 text-muted small">Más de 100 productos para pedir en 1 clic</h6>
         </div>
     </div>
     <!-- Precio -->
     <hr class="hr-gradient my-6">
     <div class="container-fluid">
-        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Precio</h3>
+        <h2 id="precio" class="text-center text-primary fw-bold ff-gotham display-4">Precio</h2>
         <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Si queremos hablar de confianza, debemos ser transparentes</h6>
         <div class="mx-auto mt-5 d-flex flex-column flex-md-row gap-2 gap-lg-3 gap-xl-4 justify-content-center">
             <!-- Precio real -->
@@ -492,7 +712,7 @@
                     <img src="./icons/carts.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
                 <p class="mt-3 mb-0 fw-bold">Precio real del producto</p>
-                <p class="mt-1 fs-6 text-muted">Precio de lista + TAX en EE.UU.<sup class="text-indigo">&nbsp;1</sup> </p>
+                <p class="mt-1 fs-6 text-muted">Precio + Shipping + TAX en EE.UU.</p>
             </div>
             <!-- + -->
             <div class="align-self-center text-center display-1 text-warning opacity-75">+</div>
@@ -511,7 +731,7 @@
                 <div class="bg-guvery bg-opacity-50 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/credit-card.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
-                <p class="mt-3 mb-0 fw-bold">Servicio de Guvery<span class="text-indigo">*</span></p>
+                <p class="mt-3 mb-0 fw-bold">Servicio de Guvery<span class="text-indigo">&nbsp;*</span></p>
                 <p class="mt-1 fs-6 text-muted"><strong class="text-warning">7% del subtotal</strong> + <span class="price-decimal text-primary">1</span></p>
             </div>
             <!-- = -->
@@ -521,19 +741,14 @@
                 <div class="bg-dark bg-opacity-25 rounded-circle mx-auto shadow-sm" style="max-width: 130px;">
                     <img src="./icons/money.png" class="img-responsive m-4" style="max-width: 80px;">
                 </div>
-                <p class="mt-3 mb-0 fw-bold">Total a pagar<sup class="text-indigo">&nbsp;2</sup></p>
+                <p class="mt-3 mb-0 fw-bold">Total a pagar</p>
                 <p class="mt-1 fs-6 text-muted">Reembolso 100% garantizado</p>
             </div>
         </div>
         <!-- disclaimer precio -->
-        <div class="mt-2 text-center text-primary opacity-50" style="font-size: 12px;">
-            <p class="d-block d-md-inline m-0"><span class="text-indigo">1.</span> Algunas tiendas agregan costos de envío.</p>
-            <span class="d-none d-md-inline">&nbsp;&nbsp;&nbsp;</span>
-            <p class="d-block d-md-inline m-0"><span class="text-indigo">2.</span> Recojo en Lima gratis / envío a domicilio = costo extra.</p>
-        </div>
-        <h6 class="mt-4 text-center text-indigo opacity-75 ff-gotham">* El 7% llega hasta <span class="price-decimal fw-bold">59</span> 😇</h6>
+        <h6 class="mt-4 text-center text-indigo opacity-75 small">* El 7% llega hasta <span class="price-decimal fw-bold">59</span> 😇</h6>
         <!-- Ejemplos -->
-        <div class="mt-5 mx-1 mx-sm-3 mx-md-4 mx-lg-5 mx-xl-6">
+        <div class="mt-5 mx-auto" style="max-width: 900px;">
             <div class="accordion border border-4 rounded-4" id="accordionExample">
                 <div class="accordion-item border border-0">
                   <h2 class="accordion-header border border-0 rounded-5 m-1" id="headingOne">
@@ -542,24 +757,24 @@
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                    <div class="accordion-body p-0">
                         <div class="d-flex flex-column flex-md-row justify-content-between gap-3 m-1 m-lg-3 m-xl-4">
                             <!-- 1 -->
                             <div class="card align-self-center" style="width: 100%; max-width: 370px;">
-                                <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/141_3.png" class="card-img-top mx-auto" alt="iPhone 13 Pro" style="max-width: 200px;">
+                                <img src="https://storage.googleapis.com/guvery-cdn/public_images/items/279_1.png" class="card-img-top mx-auto" alt="iPhone 13 Pro" style="max-width: 200px;">
                                 <div class="card-body">
-                                  <h5 class="card-title">iPhone 13 Pro</h5>
+                                  <h5 class="card-title">iPhone 14 Pro</h5>
                                   <ul class="list-group list-group-flush">
                                     <li class="list-group-item text-muted py-0 py-md-2">
                                         <div class="row">
                                             <div class="col-8 pe-0">Precio real:</div>
-                                            <div class="col-4 text-end ps-0 price-decimal">1069</div>
+                                            <div class="col-4 text-end ps-0 price-decimal">1074</div>
                                         </div>
                                     </li>
                                     <li class="list-group-item text-muted py-0 py-md-2">
                                         <div class="row">
                                             <div class="col-7 pe-0">Viajero:</div>
-                                            <div class="col-5 text-end ps-0 price-decimal">85</div>
+                                            <div class="col-5 text-end ps-0 price-decimal">87</div>
                                         </div>
                                     </li>
                                     <li class="list-group-item text-muted py-0 py-md-2">
@@ -571,7 +786,7 @@
                                     <li class="list-group-item fw-bold">
                                         <div class="row">
                                             <div class="col-6">Total:</div>
-                                            <div class="col-6 text-end price-decimal">1214</div>
+                                            <div class="col-6 text-end price-decimal">1221</div>
                                         </div>
                                     </li>
                                   </ul>
@@ -650,51 +865,54 @@
             </div>
         </div>
         <!-- Bancos -->
-        <h5 class="mt-5 mb-4 text-center text-muted opacity-75 fw-bold ff-gotham">Pagos vía transferencia bancaria ó tarjeta de crédito con ZiPago*</h5>
-        <div id="splideBanks" class="splide px-6 mb-6" aria-label="Basic Structure Example">
+        <div id="splideBanks" class="splide px-6 my-5 mx-2 mx-md-4 mx-lg-5 mx-xl-6" aria-label="Bancos de Guvery">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <div class="splide__slide__container text-center">
+                        <div class="splide__slide__container text-center mx-auto">
                             <img src="https://guvery.com/images/logo_BCP.png" alt="Logo de BCP" height="80px">
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="splide__slide__container text-center">
+                        <div class="splide__slide__container text-center mx-auto">
                             <img src="https://guvery.com/images/logo_BBVA.png" alt="Logo de BBVA" height="80px">
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="splide__slide__container text-center">
+                        <div class="splide__slide__container text-center mx-auto">
                             <img src="https://guvery.com/images/logo_SCO.png" alt="Logo de Scotiabank" height="80px">
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="splide__slide__container text-center">
+                        <div class="splide__slide__container text-center mx-auto">
                             <img src="https://guvery.com/images/logo_IBK.png" alt="Logo de Interbank" height="80px">
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+        <h5 class="text-center text-muted opacity-75 fw-bold ff-gotham">Pagos vía transferencia bancaria* ó tarjeta de crédito con ZiPago**</h5>
+        <h5 class="text-center text-muted opacity-50 fw-bold ff-gotham">Dólares (US$) y Soles (S/.)</h5>
+        <h6 class="mt-4 text-center text-indigo opacity-50 small">* Las transferencias bancarias fuera de Lima pueden cobrar una comisión por el banco.</h6>
+        <h6 class="text-center text-indigo opacity-50 small">** ZiPago permite pagar con tarjeta de crédito desde el APP de tu banco, cobrando una comisión de <span class="price-decimal">1</span> a <span class="price-decimal">4</span>.</h6>
     </div>
     <!-- Cupones -->
     <hr class="hr-gradient my-6">
     <div class="container-fluid">
-        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Cupones</h3>
+        <h4 id="cupones" class="text-center text-primary fw-bold ff-gotham">Cupones</h4>
         <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Lanzamos cupones constantemente solo para los usuarios registrados</h6>
         <div class="my-4 text-center">
-            <a href="" class="btn btn-outline-primary rounded-pill p-4 fw-bold shadow"><i class="bi bi-ticket-perforated"></i></i>&nbsp;&nbsp;Revisar Cupones</a>
+            <a href="https://www.guvery.com/cupones/" class="btn btn-outline-primary rounded-pill p-3 fw-bold shadow"><i class="bi bi-ticket-perforated"></i></i>&nbsp;&nbsp;Revisar Cupones</a>
         </div>
     </div>
     <!-- Contacto -->
     <hr class="hr-gradient my-6">
     <div class="container-fluid">
-        <h3 id="precio" class="text-center text-primary fw-bold ff-gotham">Contacto</h3>
+        <h2 id="contacto" class="text-center text-primary fw-bold ff-gotham display-4">Contacto</h2>
         <h6 class="text-center text-primary opacity-75 fw-bold ff-gotham">Guvery funciona 24x7</h6>
         <h6 class="text-center text-muted ff-gotham mx-auto" style="max-width: 500px;">Pero nuestra canal de atención personalizada por whatsapp es de Lunes a Viernes de 9am a 5pm</h6>
         <div class="my-4 text-center">
-            <a href="" class="btn btn-whatsapp rounded-pill p-4 ff-axiforma text-white fw-bold shadow"><i class="bi bi-whatsapp"></i></i>&nbsp;&nbsp;+51 960684330</a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=51960684330&text=Hola,%20vengo%20de%20Guvery%20ONE.%20Mi%20nombre%20es%20" class="btn btn-whatsapp rounded-pill p-4 ff-axiforma text-white fw-bold shadow"><i class="bi bi-whatsapp"></i></i>&nbsp;&nbsp;+51 960684330</a>
         </div>
     </div>
     <!-- Footer -->
@@ -702,7 +920,7 @@
         <div class="container py-4 py-md-5 px-4 px-md-3">
           <div class="row">
             <div class="col-6 col-lg-3 mb-3">
-              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="https://www.guvery.com" aria-label="Bootstrap">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="384.000000pt" height="384.000000pt" viewBox="0 0 384.000000 384.000000"
                     preserveAspectRatio="xMidYMid meet" style="max-width: 32px; max-height: 32px;">
@@ -753,22 +971,22 @@
               <h5>Síguenos</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                    <a target="_blank" href="https://www.facebook.com/guveryoficial/" class="ff-gotham fw-bold small text-decoration-none d-flex">
                         <i class="bi bi-facebook h5" style="color: #007bf3;"></i><span>&nbsp;</span><span>guveryoficial (15k)</span>
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                    <a target="_blank" href="https://www.instagram.com/guveryoficial/" class="ff-gotham fw-bold small text-decoration-none d-flex">
                         <i class="bi bi-instagram h5" style="color: #c13584"></i><span>&nbsp;</span><span>guveryoficial (3k)</span>
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                    <a target="_blank" href="https://www.youtube.com/c/GuveryOficial" class="ff-gotham fw-bold small text-decoration-none d-flex">
                         <i class="bi bi-youtube h5" style="color: #fe0000"></i><span>&nbsp;</span><span>GuveryOficial (5k)</span>
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a href="/" class="ff-gotham fw-bold small text-decoration-none d-flex">
+                    <a target="_blank" href="https://www.tiktok.com/@guveryoficial" class="ff-gotham fw-bold small text-decoration-none d-flex">
                         <i class="bi bi-tiktok h5" style="color: #000"></i><span>&nbsp;</span><span>guveryoficial (0.5k)</span>
                     </a>
                 </li>
@@ -778,24 +996,24 @@
             <div class="col-6 col-lg-3 mb-3">
               <h5>Links</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="/docs/5.2/getting-started/">Calculadora</a></li>
-                <li class="mb-2"><a href="/docs/5.2/examples/starter-template/">Testimonios</a></li>
-                <li class="mb-2"><a href="/docs/5.2/getting-started/webpack/">Guvery ONE</a></li>
-                <li class="mb-2"><a href="/docs/5.2/getting-started/parcel/">Blog de Guvery</a></li>
+                <li class="mb-2"><a href="https://www.guvery.com/calculadora/">Calculadora</a></li>
+                <li class="mb-2"><a href="https://www.guvery.com/testimonios/">Testimonios</a></li>
+                <li class="mb-2"><a href="https://www.guvery.com/one/">Guvery ONE</a></li>
+                <li class="mb-2"><a target="_blank" href="https://medium.com/@guveryoficial/">Blog de Guvery</a></li>
               </ul>
             </div>
             <div class="col-6 col-lg-3 mb-3">
               <h5>Legal</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Terminos y condiciones</a></li>
-                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Política de privacidad</a></li>
-                <li class="mb-2"><a href="https://github.com/twbs/rfs">Aduanas de Perú</a></li>
-                <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">TSA regulación aérea</a></li>
+                <li class="mb-2"><a target="_blank" href="https://www.guvery.com/terminos/">Terminos y condiciones</a></li>
+                <li class="mb-2"><a target="_blank" href="https://www.guvery.com/politica-privacidad/">Política de privacidad</a></li>
+                <li class="mb-2"><a target="_blank" href="http://bienvenidoalperu.sunat.gob.pe/ingreso.html">Aduanas de Perú</a></li>
+                <li class="mb-2"><a target="_blank" href="https://www.tsa.gov/travel/security-screening/prohibited-items">TSA regulación aérea</a></li>
               </ul>
             </div>
           </div>
           <div class="my-2 text-center">
-            <a href="" class="h5 text-decoration-none link-dark border-bottom border-dark"><i class="bi bi-book"></i>&nbsp;Libro de Reclamaciones</a>
+            <a target="_blank" href="https://www.guvery.com/reclamo/" class="h5 text-decoration-none link-dark border-bottom border-dark"><i class="bi bi-book"></i>&nbsp;Libro de Reclamaciones</a>
           </div>
         </div>
       </footer>
@@ -817,6 +1035,8 @@
             // bajas
             nav.classList.add('bg-guvery', 'shadow-lg');
             nav.classList.remove('bg-white');
+            nav.querySelectorAll('.dropdown-menu').forEach((menu) => menu.classList.add('bg-guvery'));
+            nav.querySelectorAll('.dropdown-menu img').forEach((img) => img.style.filter = "drop-shadow(0px 0px 1px black)");
             nav.querySelectorAll('li > a').forEach((link) => link.classList.add('text-white'));
             nav.querySelectorAll('li > a.btn-outline-secondary').forEach((button) => button.classList.replace('btn-outline-secondary', 'btn-outline-primary'));
             logo.style.filter = "brightness(0) invert(1)";
@@ -825,6 +1045,8 @@
             // top
             nav.classList.add('bg-white');
             nav.classList.remove('bg-guvery', 'shadow-lg');
+            nav.querySelectorAll('.dropdown-menu').forEach((menu) => menu.classList.remove('bg-guvery'));
+            nav.querySelectorAll('.dropdown-menu img').forEach((img) => img.style.filter = "none");
             nav.querySelectorAll('li > a').forEach((link) => link.classList.remove('text-white'));
             nav.querySelectorAll('li > a.btn-outline-primary').forEach((button) => button.classList.replace('btn-outline-primary', 'btn-outline-secondary'));
             logo.style.filter = "";
@@ -847,19 +1069,25 @@
         perPage: 6,
         arrows: true,
         pagination: false,
+        autoplay: true,
+        interval: 3000,
         gap: 2,
         breakpoints: {
             480: {
                 perPage: 1,
+                interval: 1000,
             },
             600: {
                 perPage: 2,
+                interval: 2000,
             },
             768: {
                 perPage: 3,
+                interval: 2000,
             },
             992: {
                 perPage: 4,
+                interval: 2500,
             },
             1200: {
                 perPage: 5,
@@ -867,6 +1095,30 @@
         }
     });
     splideBrands.mount();
+    var splideDeliveries = new Splide('#splideDeliveries', {
+        type: 'loop',
+        perPage: 6,
+        arrows: true,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+        gap: 2,
+        breakpoints: {
+            600: {
+                perPage: 1,
+            },
+            768: {
+                perPage: 2,
+            },
+            992: {
+                perPage: 3,
+            },
+            1200: {
+                perPage: 4,
+            },
+        }
+    });
+    splideDeliveries.mount();
     var splideTestimonials = new Splide('#splideTestimonials', {
         type: 'loop',
         perPage: 3,
@@ -885,7 +1137,7 @@
         }
     });
     splideTestimonials.mount();
-    var splideBanks = new Splide('#splideBanks', {
+    var splideOneCollections = new Splide('#splideOneCollections', {
         type: 'loop',
         perPage: 4,
         arrows: true,
@@ -895,9 +1147,21 @@
         gap: 2,
         breakpoints: {
             768: {
-                perPage: 1,
+                perPage: 2,
             },
-            992: {
+        }
+    });
+    splideOneCollections.mount();
+    var splideBanks = new Splide('#splideBanks', {
+        type: 'loop',
+        perPage: 4,
+        arrows: true,
+        pagination: true,
+        autoplay: true,
+        interval: 3000,
+        gap: 1,
+        breakpoints: {
+            768: {
                 perPage: 2,
             },
         }
